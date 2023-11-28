@@ -1,0 +1,19 @@
+{
+    "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
+    "UIDictionary": {
+        "DreamSignal" : "Strange Signals",
+        "Canyon Signal" : "Hidden Gorge",
+        "Woodlands Signal" : "River Lowlands",
+        "Diving Bell" : "Diving Bell",
+        "TransportPilgrimQM" : "Transport Pilgrim #2",
+        "TransportPilgrimEYE" : "Transport Pilgrim #2"
+    },
+    "DialogueDictionary": {
+        // Slate
+        "Why do you keep saying random things before I launch?": "なぜ出発前にいつもと違うことを言えるんだ？",
+        "Huh? Is that <![CDATA[<i>]]>shade<![CDATA[</i>]]> you're throwing at me? Because if that is shade I'll have you know that the fuel in those tanks <![CDATA[<i>]]>does<![CDATA[</i>]]> eventually run out, and I'm the one who refuels them, so keep that in mind.": "はぁ？<![CDATA[<i>]]>陰<![CDATA[</i>]]>口でも言ってるのか？もしお前がそういう日陰にいるというなら、お前の燃料タンクは<![CDATA[<i>]]>必ず<![CDATA[</i>]]>枯渇するだろうな。そいつを補給してるのは私だ。忘れるなよ。",
+        "Not really sure what you mean though. I mean, I guess I occasionally think to tell the travelers stuff that they'd find useful, especially when it's their first go at it. If that's what you mean by \"random\" then I have no idea what to tell you.": "さて、実際のところお前が本当は何を意味しようとしてるのかはわからない。旅人らにとって、特に初めて出発するときは何か役立つことを私は伝えようと思うことがある。もしそれがお前の言う“いつもと違うこと”なら、もはや伝えることはない。",
+        "Funny thing is that sometimes it feels like I've done this whole thing before? I don't know. I think it's the fumes. You kind of lose track of time when you're out here like this, which is part of what I like about it. Lets the mind wander, you know?": "面白いことにこのやり取りは前にもやったような気がすることがある。わからないが、おそらく煙のせいだろう。こうしてここにいると時間を忘れてしまうものだが、こういうのもいいものだ。一緒に心を彷徨わせてみないか？&lt;i&gt;&lt;/i&gt;",
+        "Also, don't you have something better to do? You know, space? Go harass some other lifeform and accuse them of being random. Maybe an Anglerfish. I'm sure they'll like that.": "ああ、何かいいことはないのか？そう、宇宙はどうだ？どこか別の生命体に嫌がらせでもして、いつもと違うことをしろと糾弾してくればいい。アンコウがいい。きっと奴らなら気に入るだろう。&lt;i&gt;&lt;/i&gt;"
+    }
+}
