@@ -14,6 +14,14 @@
         "Huh? Is that <![CDATA[<i>]]>shade<![CDATA[</i>]]> you're throwing at me? Because if that is shade I'll have you know that the fuel in those tanks <![CDATA[<i>]]>does<![CDATA[</i>]]> eventually run out, and I'm the one who refuels them, so keep that in mind.": "はぁ？<![CDATA[<i>]]>陰<![CDATA[</i>]]>口でも言ってるのか？もしお前がそういう日陰にいるというなら、お前の燃料タンクは<![CDATA[<i>]]>必ず<![CDATA[</i>]]>枯渇するだろうな。そいつを補給してるのは私だ。忘れるなよ。",
         "Not really sure what you mean though. I mean, I guess I occasionally think to tell the travelers stuff that they'd find useful, especially when it's their first go at it. If that's what you mean by \"random\" then I have no idea what to tell you.": "さて、実際のところお前が本当は何を意味しようとしてるのかはわからない。旅人らにとって、特に初めて出発するときは何か役立つことを私は伝えようと思うことがある。もしそれがお前の言う“いつもと違うこと”なら、もはや伝えることはない。",
         "Funny thing is that sometimes it feels like I've done this whole thing before? I don't know. I think it's the fumes. You kind of lose track of time when you're out here like this, which is part of what I like about it. Lets the mind wander, you know?": "面白いことにこのやり取りは前にもやったような気がすることがある。わからないが、おそらく煙のせいだろう。こうしてここにいると時間を忘れてしまうものだが、こういうのもいいものだ。一緒に心を彷徨わせてみないか？&lt;i&gt;&lt;/i&gt;",
-        "Also, don't you have something better to do? You know, space? Go harass some other lifeform and accuse them of being random. Maybe an Anglerfish. I'm sure they'll like that.": "ああ、何かいいことはないのか？そう、宇宙はどうだ？どこか別の生命体に嫌がらせでもして、いつもと違うことをしろと糾弾してくればいい。アンコウがいい。きっと奴らなら気に入るだろう。&lt;i&gt;&lt;/i&gt;"
+        "Also, don't you have something better to do? You know, space? Go harass some other lifeform and accuse them of being random. Maybe an Anglerfish. I'm sure they'll like that.": "ああ、何かいいことはないのか？そう、宇宙はどうだ？どこか別の生命体に嫌がらせでもして、いつもと違うことをしろと糾弾してくればいい。アンコウがいい。きっと奴らなら気に入るだろう。&lt;i&gt;&lt;/i&gt;",
+
+        // Hal
+        "Hey, do you know where Hornfels is?": "ねぇ、Hornfelsがどこにいるか知らない？",
+        "What? Oh, yeah! They wanted me to tell you that they're over by the <![CDATA[<color=orange>Radio Tower</color>]]>. Something about the statue opening its eyes reminding them of something? I dunno.": "ん？そうそう！お前に<![CDATA[<color=orange>電波塔</color>]]>にいるというのを伝えてほしいって言われてたんだった。彫像が目を開けたことがきっかけになったのか知らないけど、何か思い出してしまったらしいよ？",
+        "You should have seen them run out of here, though. It was <![CDATA[<i>]]>wild<![CDATA[</i>]]>. I had no idea Hornfels still had that in them.": "いやぁでも、あの走ってく姿はお前も見ておくべきだった。あれは<![CDATA[<i>]]>ワイルド<![CDATA[</i>]]>だった。Hornfelsがまだあんなことができるとは思わなかったよ。",
+
+        // Hornfels
+        "Ah, hello! I was just about to radio Gossan to come and find you! Nice to see that you've already gotten on with your first expedition.": "あぁ、来たか！ちょうどGossanにお前を探しに来るよう無線で伝えようとしてたところだったんだ！すでに最初の探検を順調にやれてるようでよかったよ。"
     }
 }
