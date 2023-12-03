@@ -22,6 +22,33 @@
         "You should have seen them run out of here, though. It was <![CDATA[<i>]]>wild<![CDATA[</i>]]>. I had no idea Hornfels still had that in them.": "いやぁでも、あの走ってく姿はお前も見ておくべきだった。あれは<![CDATA[<i>]]>ワイルド<![CDATA[</i>]]>だった。Hornfelsがまだあんなことができるとは思わなかったよ。",
 
         // Hornfels
-        "Ah, hello! I was just about to radio Gossan to come and find you! Nice to see that you've already gotten on with your first expedition.": "あぁ、来たか！ちょうどGossanにお前を探しに来るよう無線で伝えようとしてたところだったんだ！すでに最初の探検を順調にやれてるようでよかったよ。"
+        "Ah, hello! I was just about to radio Gossan to come and find you! Nice to see that you've already gotten on with your first expedition.": "あぁ、来たか！ちょうどGossanにお前を探しに来るよう無線で伝えようとしてたところだったんだ！すでに最初の探検を順調にやれてるようでよかったよ。",
+        "I'm not sure if anyone told you, but the statue opened its eyes! Imagine that! Of course, I have absolutely no idea why, but still. It's fascinating.": "すでにお前も知ってるかもしれないが、彫像が目を開けたんだ！想像してみてくれ！もちろん、理由なんてまったく見当もつかない。それでも魅力的だ。",
+        "What are you doing here?": "ここで何をしてるの？",
+        "Hey, I'm in a hurry. Can I ask you something?": "すまない、急いでるんだ。ちょっと聞きたいことがあるんだけど？",
+        "Oh, yes. Certainly. What is it?": "あぁ、そうなのか。わかった。何を聞きたいんだ？",
+        "Oh, well, crunching the numbers as they say. Mainly just wanted to get a little bit of peace and quiet. I tend to come here when the Observatory gets a little too... busy, for my liking - and sometimes it's very helpful for getting a different perspective on things.": "あぁ、そうだな、言うなれば数字遊びをしようと思ってね。つまり、少し平和で静かなところに身を置きたかったんだ。私はよく観測所が少し…騒がしくなりすぎたときにここに来るんだが、それは私の好みでもあるし - 時には物事について別の視点を得るのに役立つこともある。",
+        "Frankly, all of this ruckus surrounding the statue opening its eyes has proved a little bit too much for me at the moment. And of course Hal is asking a million questions, not that I can blame them.": "率直に言って、目を開けた彫像をめぐるこの騒ぎに、まだ少し私はついていけてないんだ。そしてもちろん、私に何百万もの質問をしてくるHalが悪いわけじゃない。",
+        "Feel free to look around to your heart's content, if you'd like. These are some of the first images printed of our solar system in its entirety. Of course, not all of them are <![CDATA[<i>]]>perfect<![CDATA[</i>]]>, mind you, but it truly is impressive to look at it all from a distance. See if you can't spot Timber Hearth!": "よかったら心ゆくまで見ていってほしい。ここにあるのは私らの星系全体を撮った最初の写真だ。ああ、すべてが<![CDATA[<i>]]>完璧<![CDATA[</i>]]>というわけじゃないが、少し遠くから眺めると本当に感動的なんだ。木の炉辺も鮮やかだ！",
+        "Anyhow, enough about that. What about you? Anything you need before continuing your maiden voyage among the stars?": "ともかく、そんなところだ。そちらはどうだ？星々を巡る初めての旅を続ける前に何か必要なものがあるのかな？",
+        "Hello again. I'm still trying to wrap my head around why that statue suddenly opened its eyes. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> Oh well, I suppose I'll figure it out another time.": "また会ったな。なぜあの彫像が目を開けたのか未だに頭を悩ませてるよ。<![CDATA[<Pause/>]]><![CDATA[<color=grey>はぁ…。</color>]]><![CDATA[<Pause/>]]>まあ、また今度考えてみることにするよ。",
+        "Was there something you needed?": "何か用かな？",
+        "I found something!": "何か見つけた！",
+        "Where are the other travelers?": "他の旅人たちはどこに？",
+        "Tell me more about Feldspar.": "Feldsparのことをもっと教えてほしい。",
+        "No thanks, I’m good.": "いや、問題ない。",
+        "What did you want to talk to me about?": "何について私に話そうとしてくれてたんだ？",
+        "Did you now? Let's hear it!": "もう？ぜひ聞かせてほしい！",
+        "I found Feldspar!": "Feldsparを見つけた！",
+        "The Nomai statue opened its eyes!": "Nomai像が目を開けた！",
+        "Actually, nevermind.": "いや、気にしないで。",
+        "Ah. Well, if you do come across anything in your travels that you feel is worth mentioning, I would love to hear it.": "あぁ、そうか。もしこの旅で何か面白いと思えるものを見つけたなら、ぜひ聞かせてほしい。",
+        "Oh... yes, that. I suppose Slate told you, then?": "あぁ…そうだった。Slateが言ってたんだろう？",
+        "I wasn't going to mention it since this is your first expedition, but something about that statue opening its eyes convinced me otherwise.": "これはお前の初めての探検なんだから、そのことについて伝えるつもりはなかったんだ。でも、目を開いたあの彫像によって私は確信したんだ。",
+        "A bit before your time, and before Feldspar went missing, there was another traveler. A Hatchling. Quite like you, in fact.": "お前のときより少し前、そしてFeldsparが行方不明になる前、もう一人の旅人がいたんだ。ひよっ子。そう、ちょうどお前と同じようなやつが。",
+        "They were one of the first of the new generation of Outer Wilds Ventures that came after of the four of us -- that being me, Slate, Gossan, and of course Feldspar. They were quite taken with the name \"Acetate\" of all things, something that was of their own invention by the way, but I have never seen a traveller so enamored with the Hearthian spirit as they were.": "あいつは私ら4人 - つまり私、Slate、Gossan、そしてもちろんFeldspar、の後に生まれた新世代のOuter Wilds Venturesの最初の一人だった。万物の“Acetate”という自分の名前にすっかり夢中になってて、いやあいつ自身が勝手にそう名乗りだしたのだが、とはいえあれほどHearthianの精神に邁進していた旅人を見たことがない。",
+        "That is, of course, until one day -- even more suddenly than Feldspar -- they went out to the edge of the solar system and just... disappeared. No one knows why. With Feldspar I expected it, as much as I hate to admit, but with Acetate... I can't even begin to imagine how that would happen.": "あれは、そう、ある日 - Feldsparよりもさらに突然に - 星系の端に行って、まさに…消滅するまでのことだった。その理由は誰にもわからない。Feldsparの場合は、認めたくはないものの予想できることだったが、Acetateの場合は…どうしてそんなことが起こりうるのか想像することさえできてない。",
+        "Could you find out what happened to them for me? I know that it's a big ask, but if you at some point find anything that could give us - or me - some closure, I would greatly appreciate it.": "あいつに何が起こったのか調査してくれないだろうか？大変なお願いだというのはわかってる、だが、もし何かの時点で私ら - あるいは私 - に何らかの結論を下せるものを見つけてくれたら、本当にありがたいんだ。",
+        "Where should I start?": "どこから始めるのがいいだろうか？"
     }
 }
