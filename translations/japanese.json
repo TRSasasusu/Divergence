@@ -54,5 +54,17 @@
         "I'd ask Esker if they remember anything about it, on the off chance that they do. It seems to me that there aren't really any leads as to where Acetate could have gone, unfortunately, and I don't necessarily expect for you to find anything useful on your own.": "Eskerにあのときのことを覚えてるか、もはや期待できそうにないが聞いてみようと思ってる。残念だが、Acetateがどこへ行ってしまったのかの手がかりはもうどこにもないのだろうとも思っていて、だからお前が何か見つけてくれるとはあまり期待してないんだ。",
         "Still though, it's nice to get a new pair of eyes on it after all of these years. I won't be too dissapointed if you don't get anywhere, but at the same time I very much appreciate your willingness to help. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.": "そうだとしても、もう何年も経った今でも、新たに注目が得られるのは嬉しいんだ。たとえお前がどこにもたどり着かなかったとしても私はがっかりしないし、それどころか助けようとしてくれることに非常に感謝してる。自分の監視下にある誰かに何かひどいことが起きたという罪悪感を乗り越えるのは難しいものなんだ。特に、最初にあいつに宇宙飛行士になるよう勧めたのが私だったのだからなおさらだ。",
         "Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.": "他に何か必要なことはないか？引き留めてしまってすまない。他のことであってもお前が言うことならとても興味がある。そうなのだけど、もしも、Acetateについて何かわかったことがあったら遠慮なく教えてほしい。"
+    },
+    "ShipLogDictionary": {
+        // Timber Hearth
+        "Missing Explorer": "消えた旅人",
+        "Hornfels told me about a Hearthian explorer named Acetate that went missing during one of their expeditions. The last place anyone saw them was at the Lunar Outpost, on the Attlerock. I wonder if Esker knows anything.": "Hornfelsは、探検中に行方不明になったAcetateという名のHearthianの旅人について私に話してくれた。その人物が最後に見られた場所は、アトルロックの月基地であった。Eskerは何か知っているだろうか。",
+        "Deep Space Satellite": "深宇宙衛星",
+        "Esker said that Acetate wanted to scout a good location for the Deep Space Satellite before starting their most recent expedition.": "Eskerによると、Acetateは探検に向かう前に深宇宙衛星を観察するのに適した場所を探していた。",
+        "According to Esker, the missing Hearthian explorer Acetate went to find an ideal orbital path for the satellite before they disappeared.": "Eskerによると、行方不明になった旅人Acetateはいなくなる前に衛星の理想的な軌道を探していた。",
+
+        // Ring World
+        "The Mainframe": "メインフレーム",
+        "I teleported into a hidden, secret location that appears to be some sort of central control room.": "私は隠された、何らかの中央制御室に見える秘密の場所にワープした。"
     }
 }
