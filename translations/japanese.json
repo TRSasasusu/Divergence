@@ -53,7 +53,7 @@
         "The last place that they went to before they went missing was the <![CDATA[<color=orange>Lunar Outpost</color>]]>, on the Attlerock. We don't use it much anymore, but back in the day it was vital for the exploration of our solar system.": "あいつが消える前に最後に行ったのはアトルロックの<![CDATA[<color=orange>月基地</color>]]>だった。今となってはほとんど使われてないが、かつては私らの星系を探検するうえで欠かせないものだったんだ。",
         "I'd ask Esker if they remember anything about it, on the off chance that they do. It seems to me that there aren't really any leads as to where Acetate could have gone, unfortunately, and I don't necessarily expect for you to find anything useful on your own.": "Eskerにあのときのことを覚えてるか、もはや期待できそうにないが聞いてみようと思ってる。残念だが、Acetateがどこへ行ってしまったのかの手がかりはもうどこにもないのだろうとも思っていて、だからお前が何か見つけてくれるとはあまり期待してないんだ。",
         "Still though, it's nice to get a new pair of eyes on it after all of these years. I won't be too dissapointed if you don't get anywhere, but at the same time I very much appreciate your willingness to help. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.": "そうだとしても、もう何年も経った今でも、新たに注目が得られるのは嬉しいんだ。たとえお前がどこにもたどり着かなかったとしても私はがっかりしないし、それどころか助けようとしてくれることに非常に感謝してる。自分の監視下にある誰かに何かひどいことが起きたという罪悪感を乗り越えるのは難しいものなんだ。特に、最初にあいつに宇宙飛行士になるよう勧めたのが私だったのだからなおさらだ。",
-        "Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.": "他に何か必要なことはないか？引き留めてしまってすまない。他のことであってもお前が言うことならとても興味がある。そうなのだけど、もしも、Acetateについて何かわかったことがあったら遠慮なく教えてほしい。"
+        "Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.": "他に何か必要なことはないか？引きとめてしまってすまない。他のことであってもお前が言うことならとても興味がある。そうなのだけど、もしも、Acetateについて何かわかったことがあったら遠慮なく教えてほしい。"
     },
     "ShipLogDictionary": {
         // Timber Hearth
@@ -75,13 +75,13 @@
         "I activated an interface using the mainframe which is somewhere in the Shrouded Woodlands.": "私はメインフレームを使って、覆われた森林地帯のどこかにあるインターフェースを有効化した。",
         "Hidden Code Interface": "隠されたコードインターフェース",
         "Acetate's log mentions that the codes found in the Cinder Isles are actually \"interfaces\", and that each interface corresponds to a major part of the Stranger's simulated reality.": "Acetateの記録によると、燃え殻諸島で見つかったコードは実際には“インターフェース”であり、各インターフェースは流れ者の模擬現実の主要部分に対応している。",
-        "I inputted a keyword into the remote interface for the Shrouded Woodlands, hidden in the Forbidden Archive.": "私は、禁断の記録保管所に隠された覆われた森林地帯の遠隔インターフェースにキーワードを入力した。",
+        "I inputted a keyword into the remote interface for the Shrouded Woodlands, hidden in the Forbidden Archive.": "私は禁断の記録保管所に隠された、覆われた森林地帯の遠隔インターフェースにキーワードを入力した。",
         "Remote Signal Interface 2": "遠隔信号インターフェース2",
         "I activated an interface using the mainframe which is somewhere in the Starlit Cove.": "私はメインフレームを使って、星明かりの入り江のどこかにあるインターフェースを有効化した。",
-        "I inputted a keyword into the remote interface for the Starlit Cove, hidden in the Forbidden Archive.": "私は、禁断の記録保管所に隠された星明かりの入り江の遠隔インターフェースにキーワードを入力した。",
+        "I inputted a keyword into the remote interface for the Starlit Cove, hidden in the Forbidden Archive.": "私は禁断の記録保管所に隠された、星明かりの入り江の遠隔インターフェースにキーワードを入力した。",
         "Remote Signal Interface 3": "遠隔信号インターフェース3",
         "I activated an interface using the mainframe which is somewhere in the Endless Canyon.": "私はメインフレームを使って、果てなき峡谷のどこかにあるインターフェースを有効化した。",
-        "I inputted a keyword into the remote interface for the Endless Canyon, hidden in the Forbidden Archive.": "私は、禁断の記録保管所に隠された果てなき峡谷の遠隔インターフェースにキーワードを入力した。",
+        "I inputted a keyword into the remote interface for the Endless Canyon, hidden in the Forbidden Archive.": "私は禁断の記録保管所に隠された、果てなき峡谷の遠隔インターフェースにキーワードを入力した。",
         "Strange Visions": "奇妙な幻影",
         "Acetate's Investigation": "Acetateによる調査",
         "Acetate discovered something aboard the Stranger that its inhabitants wanted to keep hidden.": "Acetateは流れ者にて、その住人達が隠しておきたかった何かを発見した。",
@@ -93,13 +93,22 @@
         "Acetate discovered something aboard the Stranger relating to the Signal Blocker, and implied that the Stranger's inhabitants wanted to keep it hidden. ": "Acetateは流れ者にて信号遮断装置に関連する何かを発見し、それは流れ者の住人達が隠しておきたかったものであるとほのめかした。",
         "Acetate thought that the secret to reestablishing a connection to the Signal Blocker lies inside of the sealed vault, but they were dismayed at the fact that the codes in the Cinder Isles were destroyed. They then decided to go get some rest at their \"camp\" near the top of the dam.": "Acetateは信号遮断装置との接続を再確立する秘密は密封された保管庫の中にあると考えたが、燃え殻諸島にあるコードが破壊されていたという事実にショックを受けた。その後、ダムの頂上近くの“キャンプ”で休息をとることにした。",
         "Acetate seemed to suggest that they were close to figuring out a secret about the tower in the Cinder Isles, and that they would leave a recording inside the tower's hidden code room with more information about their discovery.": "Acetateは燃え殻諸島の塔に関する秘密の解明に近づいており、発見についてのより詳細な情報を塔の隠されたコード部屋に記録として残したようだ。",
-        "Acetate discovered a secret relating to the codes used to unlock the vault, and that they're tied to three frequencies emitted from the tower in the Cinder Isles.": "Acetateは保管庫を開けるのに使われるコードに関する秘密を発見した。それは、そのコードが燃え殻諸島の塔から発せられる3つの周波数に関連づけられているということである。",
+        "Acetate discovered a secret relating to the codes used to unlock the vault, and that they're tied to three frequencies emitted from the tower in the Cinder Isles.": "Acetateは保管庫を開けるのに使われるコードに関する秘密を発見した。それは、そのコードが燃え殻諸島の塔から発せられる3つの周波数に関連づけられているということだ。",
         "Tower Signals": "塔の信号",
         "Island Tower Secret": "島の塔の秘密",
         "According to Acetate's log, the tower in the Cinder Isles hides a secret about the true nature of the Stranger.": "Acetateの記録によると、燃え殻諸島の塔には流れ者の真に迫った秘密が隠されている。",
-        "The tower in the Cinder Isles emits a strange, ethereal signal referred to as \"Enlightment\".": "燃え殻諸島の塔は、“開化”という奇妙で霊妙な信号を発している。",
-        "The tower in the Cinder Isles emits a technical-sounding signal referred to as \"Foresight\".": "燃え殻諸島の塔は、“先見”という技術的な響きのある信号を発している。",
-        "The tower in the Cinder Isles emits a low, almost calming signal referred to as \"Eternity\".": "燃え殻諸島の塔は、“永遠”という低く心を落ち着かせる信号を発している。",
-        "The signal which leads to the Submerged Structure is actually the signal for the tower itself, while the others correspond to their respective locations.": "水中の構造物に繋がる信号は実際には塔自体のものであり、一方、他の信号はそれぞれの場所に対応している。"
+        "The tower in the Cinder Isles emits a strange, ethereal signal referred to as \"Enlightment\".": "燃え殻諸島の塔は“開化”という奇妙で霊妙な信号を発している。",
+        "The tower in the Cinder Isles emits a technical-sounding signal referred to as \"Foresight\".": "燃え殻諸島の塔は“先見”という技術的な響きのある信号を発している。",
+        "The tower in the Cinder Isles emits a low, almost calming signal referred to as \"Eternity\".": "燃え殻諸島の塔は“永遠”という低く心を落ち着かせる信号を発している。",
+        "The signal which leads to the Submerged Structure is actually the signal for the tower itself, while the others correspond to their respective locations.": "水中の構造物に繋がる信号は実際には塔自体のものであり、一方、他の信号はそれぞれの場所に対応している。",
+
+        // Quantum Moon
+        "Transport Pilgrim #2": "巡礼の輸送船#2",
+        "Transport Pilgrim 2": "巡礼の輸送船2",
+        "One of the Stranger's light spacecraft is currently in active transit to the Signal Capture Satellite.": "流れ者の軽量宇宙船の1つは現在、信号遮断衛星に向けて活発に移動している。",
+        "According to the Mainframe, the spacecraft is still broadcasting a distress signal, but the signal is too far away for the Stranger to detect it.": "メインフレームによるとその宇宙船は未だに救難信号を発信している。しかし、その信号は遠すぎるため流れ者では検知できない。",
+        "There is a light spacecraft missing from one of the Stranger's docking bays that is apparently active, but its location relative to the rest solar system is unknown.": "流れ者の発着場から活動している軽量宇宙船が1つ欠けているが、星系のどこにあるかは明らかではない。",
+        "The nearest celestial body for an emergency landing based on the transport's last known location was the Wandering Moon, likely another term for the Quantum Moon.": "輸送船の最後に記録された位置に基づいた緊急着陸先の最も近い天体は、流浪の月である。おそらく量子の月を表す用語なのだろう。",
+        "I can only detect the distress signal while standing on the Quantum Moon's sixth location, when the moon is in orbit around the Eye of the Universe.": "私が救難信号を検知できるのは量子の月の第6の場所に立っているときだけだ。つまり、月が宇宙の眼を周回する軌道上にあるときだけだ。"
     }
 }
