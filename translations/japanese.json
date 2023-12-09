@@ -19,7 +19,7 @@
         // Slate Remote
         "Oh yeah, by the way, Hornfels wanted to talk to you. Said they wanted to mention something real quick while you're up there for the launch codes. No idea what it was about.": "あぁそうだ、そういえば、Hornfelsがお前と話したいそうだ。お前が発射コードを手に入れるために来るだろうから、そのときに本当にちょっとしたことを伝えたいらしい。何なのかはさっぱりだがな。",
         "Since when does Hornfels want to talk to <![CDATA[<i>]]>me<![CDATA[</i>]]>?": "Hornfelsはいつから<![CDATA[<i>]]>私<![CDATA[</i>]]>と話したいと言ってた？",
-        "You're really starting to get on my nerves.": "あなたは本当に私の神経を逆なでしてくるな。",
+        "You're really starting to get on my nerves.": "あなたは本当に私の神経を逆撫でしてくるな。&lt;i&gt;&lt;/i&gt;",
         "Sure thing.": "わかった。",
         "Since you became an astronaut, idiot! Don't forget that you're a bona fide member of Outer Wilds Ventures, now! Hard to beleive, I know, but it's true.": "お前が宇宙飛行士になったからだよ、このばか！お前は今やOuter Wilds Venturesの正真正銘の一員であることを忘れるなよ！信じられないだろうが、これは事実だ。",
         "Plus you gotta get the launch codes anyway. Unless you already have them, in which case go do whatever space things you want to do first. Just... try not to crash into the <![CDATA[<color=orange>Observatory</color>]]> on the way back, alright? Last time that happened the whole thing almost caught on fire.": "それから、とにかく発射コードを手に入れる必要がある。すでに持ってるなら話は別だが、それならお前が宇宙でやりたいことをさっそく始めればいい。ただ…帰りは<![CDATA[<color=orange>観測所</color>]]>に墜落するなよ、いいな？前回それが起こったときは何もかもが火事になるところだった。",
@@ -146,7 +146,14 @@
         "Broadcasted location of Signal Capture Satellite.": "信号遮断衛星の位置を送信しました。",
         "Canceling broadcast of Signal Capture Satellite location...": "信号遮断衛星の位置の送信をキャンセル中…",
         "ERROR: Operation not permitted. Reason: Permission denied.": "ERROR:その操作は許可されていません。理由:権限がありません。&lt;i&gt;&lt;/i&gt;",
-        "Ending transmission with Signal Capture Satellite...": "信号遮断衛星との伝送を終了しています…"
+        "Ending transmission with Signal Capture Satellite...": "信号遮断衛星との伝送を終了しています…",
+
+        // Acetate_Entrance
+        "Uh, well... I guess now is the time that I start documenting everything that I do here, for posterity. No idea where I'm supposed to start. I'm guessing I would tell you how I got here, but you probably already know that, considering that you likely got here the same way I did.": "あぁ、そうだ…今こそ後進のために私がここで行うすべてを記録し始めるときだと思う。どこから始めればいいだろう。まずは私がどうやってここに来たかを話そうと思うけど、これを聞くあなたも同じ方法でここに来たと考えるとおそらくすでにご存知だろう。",
+        "Pretty much blew up my ship trying to fly around this thing. Barely got out before the reactor went off. No idea if there's even anything left of it floating around out there. ": "この建造物の周りを飛ぼうとしたときに私の探査艇はほとんど爆発してしまった。反応炉が吹き飛ぶ前にかろうじて脱出できたんだ。周りにまだ残骸が浮遊してるかどうかさえわからない。",
+        "I'm telling you though, this thing is <![CDATA[<i>]]>massive<![CDATA[</i>]]>. I wonder who could have built it. It's obviously not Nomai or Hearthian in origin, but no one else was known to live in our solar system besides that. But where could they have come from, and what were they doing here? How long has this been here without anyone knowing?": "一応言っておこう、これは<![CDATA[<i>]]>大変なこと<![CDATA[</i>]]>だ。いったい誰がこいつを建てたんだ？明らかにNomaiやHearthian由来のものじゃないが、それ以外に私たちの星系に住んでるやつなんて知られてない。そして、どこから来たんだ？ここで何をしてたんだ？誰にも知られずにどれだけの間いたんだ？",
+        "First things first though, I wanted to head down to that burned out building near the <![CDATA[<color=orange>tower</color>]]> that's down the river there. Might be a more central place to set up camp, though for now it might be best to stick to hanging around the entrances. At least until I can get into one of those ships downstairs.": "まずは、川を下ったところの塔の近くにある焼け落ちた建物に行きたい。キャンプをするのにおそらくいい場所だろうと思う。ひとまず今はこの入口あたりをぶらぶらするのが最善だろう。少なくとも階下に並ぶ船の1つに乗れるまでは。",
+        "But man, talk about a good view. You don't get anything nearly this scenic on Timber Hearth. Can't wait to see how the others will react when I tell them the news.": "でも待って、この壮観な景色について話させてほしい。木の炉辺ではこれほどいいスポットはなかった。このニュースを伝えたらみんなどんな反応をするか本当に楽しみだ。"
     },
     "ShipLogDictionary": {
         // Timber Hearth
@@ -197,7 +204,7 @@
 
         // Quantum Moon
         "Transport Pilgrim #2": "巡礼輸送船#2",
-        "Transport Pilgrim 2": "巡礼輸送船2",
+        "Transport Pilgrim 2": "巡礼輸送船#2",
         "One of the Stranger's light spacecraft is currently in active transit to the Signal Capture Satellite.": "流れ者の軽量宇宙船の1つは現在、信号遮断衛星に向けて活発に移動している。",
         "According to the Mainframe, the spacecraft is still broadcasting a distress signal, but the signal is too far away for the Stranger to detect it.": "メインフレームによるとその宇宙船は未だに救難信号を発信している。しかし、その信号は遠すぎるため流れ者では検知できない。",
         "There is a light spacecraft missing from one of the Stranger's docking bays that is apparently active, but its location relative to the rest solar system is unknown.": "流れ者の発着場から活動している軽量宇宙船が1つ欠けているが、星系のどこにあるかは明らかではない。",
