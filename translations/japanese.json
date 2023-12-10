@@ -1,12 +1,15 @@
 {
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "UIDictionary": {
-        "DreamSignal" : "Strange Signals",
-        "Canyon Signal" : "Hidden Gorge",
-        "Woodlands Signal" : "River Lowlands",
-        "Diving Bell" : "Diving Bell",
-        "TransportPilgrimQM" : "Transport Pilgrim #2",
-        "TransportPilgrimEYE" : "Transport Pilgrim #2"
+        "DreamSignal" : "奇妙な信号",
+        "Canyon Signal" : "隠れ峡谷",
+        "Woodlands Signal" : "河川低地",
+        "Diving Bell" : "水中の構造物",
+        "\"Enlightenment\"": "“開化”",
+        "\"Foresight\"": "“先見”",
+        "\"Eternity\"": "“永遠”",
+        "TransportPilgrimQM" : "巡礼輸送船#2",
+        "TransportPilgrimEYE" : "巡礼輸送船#2"
     },
     "DialogueDictionary": {
         // Slate
