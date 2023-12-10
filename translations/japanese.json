@@ -71,6 +71,16 @@
         "Still though, it's nice to get a new pair of eyes on it after all of these years. I won't be too dissapointed if you don't get anywhere, but at the same time I very much appreciate your willingness to help. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.": "そうだとしても、もう何年も経った今でも、新たに注目が得られるのは嬉しいんだ。たとえお前がどこにもたどり着かなかったとしても私はがっかりしないし、それどころか助けようとしてくれることに非常に感謝してる。自分の監視下にある誰かに何かひどいことが起きたという罪悪感を乗り越えるのは難しいものなんだ。特に、最初にあいつに宇宙飛行士になるよう勧めたのが私だったのだからなおさらだ。",
         "Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.": "他に何か必要なことはないか？引きとめてしまってすまない。他のことであってもお前が言うことならとても興味がある。そうなのだけど、もしも、Acetateについて何かわかったことがあったら遠慮なく教えてほしい。",
 
+        // Esker
+        "Do you know anything about Acetate?": "Acetateについて何か知らない？",
+        "Acetate, huh? <![CDATA[<Pause/>]]>Now that's a name that I haven't heard in a very, <![CDATA[<i>]]>very<![CDATA[</i>]]> long time.": "Acetate、か？<![CDATA[<Pause/>]]>ああ本当に、<![CDATA[<i>]]>本当に<![CDATA[</i>]]>久しぶりに聞く名前だ。",
+        "Well, as a matter of fact, Acetate was the last member of Outer Wilds Ventures to actually use this outpost. Also part of the reason that we stopped, too. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]> A real Feldspar, that one.": "そう、実のところ、AcetateはOuter Wilds Venturesでこの基地を利用した最後のメンバーだった。それもここの使用を取りやめた理由の1つだったんだよ。<![CDATA[<Pause/>]]><![CDATA[<color=grey>はぁ…。</color>]]>本物のFeldsparだった、あれは。",
+        "<![CDATA[<i>]]>Incredibly<![CDATA[</i>]]> smart, though. A little too much, if you ask me. I suppose that's why Hornfels is still so hung up on it after all of these years. Someone like that doesn't really <![CDATA[<i>]]>go<![CDATA[</i>]]> missing.": "そのうえ<![CDATA[<i>]]>信じられないほど<![CDATA[</i>]]>賢かった。私に語らせるには有り余るものだよ。そしておそらく、それがHornfelsに何年も経った今でも執着させている理由なんだろう。そんな奴が<![CDATA[<i>]]>行方不明になる<![CDATA[</i>]]>なんてありえなかった。",
+        "Do you have any idea where they could have gone?": "Acetateがどこへ行ったのか心当たりはある？",
+        "Not really. The travelers don't really tell me those sorts of things anymore. <![CDATA[<size=20>]]>Not that they ever did.<![CDATA[</size>]]> Frankly Acetate could have ended up anywhere by now. ": "期待しないでくれ。旅人たちは誰もあんまりそういうことを教えてくれないんだ。<![CDATA[<size=20>]]>一度も教えてくれたことなんてない。<![CDATA[</size>]]>だからこそ、今やAcetateはどこにだって行き着く可能性がある。",
+        "I do remember hearing though that they wanted to do something before they cut themselves lose. Something about scouting a good location for Hornfels' <![CDATA[<color=orange>Deep Space Satellite</color>]]>, I forget the details. Don't know what happened to them after that.": "いや、でもいなくなる前に何かをしたいと言ってたな。Hornfelsの<![CDATA[<color=orange>深宇宙衛星</color>]]>を設置するのに適した場所を偵察することだったはず。詳細は忘れてしまったが。その後、何が起こったのかはもうわからない。",
+        "Was that helpful? Honestly you probably know more about this whole thing than I do at this point. Good luck on the search, though! Hope you find them.": "役に立てたかな？正直に言って、今の時点ですでに私よりお前の方がよくわかってるんだろう。探索には気をつけてくれよ！そしてぜひ見つけてやってくれ。",
+
         // Code Computer
         "Remote Signal Interface": "遠隔信号インターフェース",
         "ERROR: Cannot access Remote Signal Interface. REASON: Interface inactive.": "エラー:遠隔信号インターフェースにアクセスできません。理由:インターフェースが有効化されていません。",
@@ -122,7 +132,7 @@
         "No.": "いいえ。",
         "Establishing connection to intermediary relay satellite...": "中継衛星との接続を確立中…",
         "Connection established.": "接続が確立されました。",
-        "Beginning transmission... ": "伝送を開始中…"
+        "Beginning transmission... ": "伝送を開始中…",
         "Transmission received. Transmission target identified as <![CDATA[<color=orange>Signal Capture Satelite</color>]]>. All systems operational. Currently in orbit around <![CDATA[<color=orange>Universal Center</color>]]>.": "内容を受信しました。送信ターゲットは信号遮断衛星として識別されました。すべてのシステムが動作中。現在、宇宙の中心を周回しています。",
         "Canceling outbound transmission...": "外部への送信をキャンセル中…",
         "Verify status of satellite operation.": "衛星の運用状況を検証する。",
