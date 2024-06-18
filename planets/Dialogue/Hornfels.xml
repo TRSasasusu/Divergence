@@ -1,26 +1,5 @@
 <DialogueTree>
   <NameField>Hornfels</NameField>
-
-  
-
-   <DialogueNode>
-    <Name>Curator11</Name>
-    <EntryCondition>TalkedToHornfels</EntryCondition>
-    <Dialogue>
-      <Page>Hello again!</Page>
-    </Dialogue>
-    <DialogueTarget>Curator13_New</DialogueTarget>
-  </DialogueNode>
-
-  <DialogueNode>
-    <Name>Curator12</Name>
-    <EntryCondition>Space</EntryCondition>
-    <Dialogue>
-      <Page>Back so soon?</Page>
-    </Dialogue>
-    <DialogueTarget>Curator13_New</DialogueTarget>
-  </DialogueNode>
-
   <DialogueNode>
     <Name>Curator13_New</Name>
 	  <Dialogue>
@@ -103,8 +82,8 @@
 			<Page>Oh... yes, that. I suppose Slate told you, then?</Page>
 			<Page>I wasn't going to mention it since this is your first expedition, but something about that statue opening its eyes convinced me otherwise.</Page>
 			<Page>A bit before your time, and before Feldspar went missing, there was another traveler. A Hatchling. Quite like you, in fact.</Page>
-			<Page>They were one of the first of the new generation of Outer Wilds Ventures that came after of the four of us -- that being me, Slate, Gossan, and of course Feldspar. They were quite taken with the name "Acetate" of all things, something that was of their own invention by the way, but I have never seen a traveller so enamored with the Hearthian spirit as they were.</Page>
-			<Page>That is, of course, until one day -- even more suddenly than Feldspar -- they went out to the edge of the solar system and just... disappeared. No one knows why. With Feldspar I expected it, as much as I hate to admit, but with Acetate... I can't even begin to imagine how that would happen.</Page>
+			<Page>They were one of the first of the new generation of Outer Wilds Ventures that came after of the four of us - that being me, Slate, Gossan, and of course Feldspar. They were quite taken with the name "Acetate" of all things, something that was of their own invention by the way, but I have never seen a traveller so enamored with the Hearthian spirit as they were.</Page>
+			<Page>That is, of course, until one day - even more suddenly than Feldspar - they went out to the edge of the solar system and just... disappeared. No one knows why. With Feldspar I expected it, as much as I hate to admit, but with Acetate... I can't even begin to imagine how that would happen.</Page>
 			<Page>Could you find out what happened to them for me? I know that it's a big ask, but if you at some point find anything that could give us - or me - some closure, I would greatly appreciate it.</Page>
 		</Dialogue>
 	  <DialogueOptionsList>
@@ -140,15 +119,15 @@
 			<Text>I found an entirely new alien civilization hidden within our star system!</Text>
 			<DialogueTarget>CuratorFoundRingworld</DialogueTarget>
 		</DialogueOption>-->
+		<!--<DialogueOption>
+			<RequiredPersistentCondition>QM_TRANSPORT_SIXTHLOCATION</RequiredPersistentCondition>
+			<Text>I think I know what happened to Acetate...</Text>
+			<DialogueTarget>CuratorFeldsparFound</DialogueTarget>
+		</DialogueOption>-->
 		<DialogueOption>
 			<RequiredPersistentCondition>MetFeldspar</RequiredPersistentCondition>
 			<Text>I found Feldspar!</Text>
 			<DialogueTarget>CuratorFeldsparFound</DialogueTarget>
-		</DialogueOption>
-		<DialogueOption>
-			<RequiredCondition>HornfelsStatueEyes</RequiredCondition>
-			<Text>The Nomai statue opened its eyes!</Text>
-			<DialogueTarget>CuratorEyesOpen</DialogueTarget>
 		</DialogueOption>
 		<DialogueOption>
 			<Text>Actually, nevermind.</Text>
