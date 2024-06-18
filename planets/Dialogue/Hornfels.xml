@@ -1,146 +1,9 @@
 <DialogueTree>
   <NameField>Hornfels</NameField>
 
-  <DialogueNode>
-    <Name>Curator1</Name>
-      <EntryCondition>DEFAULT</EntryCondition>
-      <Dialogue>
-        <Page>There you are! I just finished pre-flight observations, and local conditions are good. Time to get our newest astronaut off the ground!</Page>
-        <Page>And you’ll be our <![CDATA[<i>]]>first<![CDATA[</i>]]> astronaut ever equipped with a Nomai translator tool! I confess, I’ve been giddy all day just thinking about it.</Page>
-        <Page>We’re better equipped than ever to unravel the mysteries of the Nomai. You and Hal should be very proud of your work!</Page>
-        <Page>Tell me, what’s your plan once you’re in space?</Page>
-      </Dialogue>
-      <DialogueOptionsList>
-        <DialogueOption>
-          <Text>I’m going to learn more about the Nomai.</Text>
-          <DialogueTarget>Curator2</DialogueTarget>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>I’ll meet up with the other travelers.</Text>
-          <DialogueTarget>Curator3</DialogueTarget>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>I want to go somewhere no one’s gone before.</Text>
-          <DialogueTarget>Curator4</DialogueTarget>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>I think I’ll start with something small.</Text>
-          <DialogueTarget>Curator5</DialogueTarget>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>I don’t know.</Text>
-          <DialogueTarget>Curator6</DialogueTarget>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>I’m gonna wing it!</Text>
-          <DialogueTarget>Curator7</DialogueTarget>
-        </DialogueOption>
-      </DialogueOptionsList>
-      <SetCondition>TalkedToHornfels</SetCondition>
-    </DialogueNode>
+  
 
    <DialogueNode>
-      <Name>Curator2</Name>
-      <Dialogue>
-        <Page>I might have guessed as much! No sense in making a translator tool if you’re not going to use it to translate anything.</Page>
-        <Page>We’ve barely scratched the surface of the Nomai writing in our solar system, so we still know very little about them. We’ve no idea if they originated here or traveled here, or why they disappeared.</Page>
-        <Page>That tool of yours should prove indispensible in solving the mystery of this ancient species!</Page>
-      </Dialogue>
-      <DialogueTarget>Curator8</DialogueTarget>
-    </DialogueNode>
-    
-    <DialogueNode>
-      <Name>Curator3</Name>
-      <Dialogue>
-        <Page>You’re going to check in with them, are you? Not a bad plan - no one knows the solar system better than our astronauts.</Page>
-        <Page>Let’s see... Chert is on the Hourglass Twins, Riebeck is on Brittle Hollow, and Gabbro is on Giant’s Deep, last I checked.</Page>
-        <Page>And... Well, there’s Feldspar, obviously, but of course we don’t know where they are, or if they’re even alive.</Page>
-        <Page>Feldspar has been lost for a very long time, I’m afraid.</Page>
-        <Page>...On a more cheerful note, you’ll find Esker stationed on the Attlerock. They’re not a traveler so much as a lunar local, but I’m sure they’d appreciate a visit nevertheless.</Page>
-      </Dialogue>
-      <RevealFacts><FactID>TM_ESKER_R1</FactID></RevealFacts>
-      <DialogueTarget>Curator8</DialogueTarget>
-    </DialogueNode>
-    
-    <DialogueNode>
-      <Name>Curator4</Name>
-      <Dialogue>
-        <Page>I like it! You’ll have plenty of options to choose from.</Page>
-        <Page>No one’s ever landed on the Interloper before, you know. Perhaps you’ll be the first?</Page>
-      <Page>I must say... Should you choose to go to Dark Bramble, be <![CDATA[<i>]]>very<![CDATA[</i>]]> careful. No one’s explored there before, either, for what you’ll find are excellent reasons.</Page>
-      </Dialogue>
-      <DialogueTarget>Curator8</DialogueTarget>
-    </DialogueNode>
-
-    <DialogueNode>
-      <Name>Curator5</Name>
-      <Dialogue>
-        <Page>You’d prefer to ease into things? That’s a sensible plan! More sensible than most of our astronauts tend to be, and that’s a fact.</Page>
-        <Page>Do you think you’ll go to the Attlerock, then? Our moon would be a safe place to travel to and get your bearings in space, and I’m sure Esker would appreciate the visit.</Page>
-        <Page>Plus, we don’t know what the ancient Nomai ruins on the moon are, or why they were built. You could put your new translator tool through its paces!</Page>
-      </Dialogue>
-      <RevealFacts><FactID>TM_ESKER_R1</FactID><FactID>TM_EYE_LOCATOR_R1</FactID></RevealFacts>
-      <DialogueTarget>Curator8</DialogueTarget>
-    </DialogueNode>
-
-    <DialogueNode>
-      <Name>Curator6</Name>
-      <Dialogue>
-        <Page>Haha! Overwhelmed by the options, perhaps? I don’t blame you.</Page>
-        <Page>If you need help getting started, you could go visit Esker on the moon. They’re alone on the Attlerock most of the time, so I’m sure they’d appreciate it.</Page>
-        <Page>Plus, we don’t know what the ancient Nomai ruins on the moon are, or why they were built. You could put your new translator tool through its paces!</Page>
-      </Dialogue>
-      <RevealFacts><FactID>TM_ESKER_R1</FactID><FactID>TM_EYE_LOCATOR_R1</FactID></RevealFacts>
-      <DialogueTarget>Curator8</DialogueTarget>
-    </DialogueNode>
-
-    <DialogueNode>
-      <Name>Curator7</Name>
-      <Dialogue>
-        <Page>Planning to follow in the footsteps of Feldspar and the great Outer Wilds Ventures tradition, are you? I might have guessed.</Page>
-        <Page>Well, see if you can’t put that translator tool of yours to good use while you’re out there!</Page>
-      </Dialogue>
-      <DialogueTarget>Curator8</DialogueTarget>
-    </DialogueNode>
-
-    <DialogueNode>
-      <Name>Curator8</Name>
-      <Dialogue>
-        <Page>Well then, looks like all that’s left is to send you off! All in all, it’s a fine day for a launch!</Page>
-      </Dialogue>
-      <DialogueOptionsList>
-        <DialogueOption>
-          <Text>I’m ready to get off this rock!</Text>
-          <DialogueTarget>Curator9</DialogueTarget>
-        </DialogueOption>
-        <DialogueOption>
-          <Text>I’m ready to die in space.</Text>
-          <DialogueTarget>Curator10</DialogueTarget>
-        </DialogueOption>
-      </DialogueOptionsList>
-    </DialogueNode>
-
-    <DialogueNode>
-      <Name>Curator9</Name>
-      <Dialogue>
-        <Page>Excellent! You’ll be needing the <![CDATA[<color=orange>launch codes</color>]]>, then.</Page>
-        <Page>Here they are. Best get off the ground before Slate makes any more modifications to your ship, eh?</Page>
-        <Page>Good luck out there! Let me know if I can help you with anything.</Page>
-      </Dialogue>
-      <SetPersistentCondition>LAUNCH_CODES_GIVEN</SetPersistentCondition>
-    </DialogueNode>
-
-    <DialogueNode>
-      <Name>Curator10</Name>
-      <Dialogue>
-        <Page>I’m not one for superstition, but isn’t that kind of unlucky to say before a launch?</Page>
-        <Page>At any rate, here are the <![CDATA[<color=orange>launch codes</color>]]>. Try not to worry too much - our ships are every bit as safe as Slate could be persuaded to make them.</Page>
-        <Page>Best of luck out there! Let me know if I can help you with anything.</Page>
-      </Dialogue>
-      <SetPersistentCondition>LAUNCH_CODES_GIVEN</SetPersistentCondition>
-    </DialogueNode>
-
-      <DialogueNode>
     <Name>Curator11</Name>
     <EntryCondition>TalkedToHornfels</EntryCondition>
     <Dialogue>
@@ -313,7 +176,7 @@
 
   <DialogueNode>
     <Name>CuratorEyesOpenLoop2_New</Name>
-    <EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
+    <EntryCondition>DEFAULT</EntryCondition>
 	<SetCondition>TalkedToCurator</SetCondition>
     <Dialogue>
       <Page>Ah, hello! I was just about to radio Gossan to come and find you! Nice to see that you've already gotten on with your first expedition.</Page>
@@ -337,7 +200,7 @@
 		<Dialogue>
 			<Page>Oh, yes. Certainly. What is it?</Page>
 		</Dialogue>
-		<DialogueTarget>Curator13</DialogueTarget>
+		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
 
 	<DialogueNode>
