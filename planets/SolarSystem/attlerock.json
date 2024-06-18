@@ -15,19 +15,6 @@
                 "radius": 2,
                 "parentPath": "Sector_THM/Characters_THM/Villager_HEA_Esker"
             }
-        ],
-        "singularities": [
-            {
-                "size": 2,
-                "type": "whiteHole",
-                "uniqueID": "ParadiseWarpEnd",
-                "position": {
-                    "x": 92.71634,
-                    "y": 0.4902344,
-                    "z": 719.3105
-                },
-                "pairedSingularity": "ParadiseWarpStart"
-            }
         ]
     }
 }

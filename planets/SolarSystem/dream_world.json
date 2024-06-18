@@ -367,100 +367,73 @@
             "type": "standingVisionTorch",
             "slides": [
               {
-                "imagePath": "graphics/slides/bell_warp/(1).png",
+                "imagePath": "graphics/slides/bell_warp/1.png",
                 "backdropAudio": "Reel_Secret_Backdrop_B",
                 "backdropFadeTime": 2,
                 "blackFrameDuration": 0.5
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(2).png"
+                "imagePath": "graphics/slides/bell_warp/2.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(3).png"
+                "imagePath": "graphics/slides/bell_warp/3.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(4).png"
+                "imagePath": "graphics/slides/bell_warp/4.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(5).png"
+                "imagePath": "graphics/slides/bell_warp/5.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(6).png"
+                "imagePath": "graphics/slides/bell_warp/6.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(7).png"
+                "imagePath": "graphics/slides/bell_warp/7.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(8).png"
+                "imagePath": "graphics/slides/bell_warp/8.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(9).png"
+                "imagePath": "graphics/slides/bell_warp/9.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(10).png"
+                "imagePath": "graphics/slides/bell_warp/10.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(11).png"
+                "imagePath": "graphics/slides/bell_warp/11.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(12).png"
+                "imagePath": "graphics/slides/bell_warp/12.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(13).png"
+                "imagePath": "graphics/slides/bell_warp/13.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(14).png"
+                "imagePath": "graphics/slides/bell_warp/14.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(15).png"
+                "imagePath": "graphics/slides/bell_warp/15.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(16).png"
+                "imagePath": "graphics/slides/bell_warp/16.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(17).png"
+                "imagePath": "graphics/slides/bell_warp/17.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(18).png"
+                "imagePath": "graphics/slides/bell_warp/18.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(19).png"
+                "imagePath": "graphics/slides/bell_warp/19.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(20).png"
+                "imagePath": "graphics/slides/bell_warp/20.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(21).png"
+                "imagePath": "graphics/slides/bell_warp/21.png"
               },
               {
-                "imagePath": "graphics/slides/bell_warp/(22).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(23).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(24).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(25).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(26).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(27).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(28).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(29).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(30).png"
-              },
-              {
-                "imagePath": "graphics/slides/bell_warp/(31).png"
+                "imagePath": "graphics/slides/bell_warp/22.png"
               }
             ],
             "position": {

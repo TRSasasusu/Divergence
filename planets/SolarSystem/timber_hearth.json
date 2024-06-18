@@ -2,7 +2,6 @@
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
     "name": "Timber Hearth",
     "removeChildren": [
-        "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
         "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/ConversationZone",
         "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)"
     ],
@@ -29,18 +28,9 @@
                 "blockAfterPersistentCondition": "HORNFELS_CLUE"
             },
             {
-                "range": 2,
-                "isRelativeToParent": true,
-                "xmlFile": "planets/Dialogue/Slate.xml",
-                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
-                "lookAtRadius": 2,
-                "radius": 2,
-                "position": {
-                    "x": -0.029,
-                    "y": 0.9186,
-                    "z": -0.322
-                }
-            },
+				"pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
+				"xmlFile": "planets/Dialogue/Slate.xml"
+			},
             {
                 "range": 2,
                 "lookAtRadius": 3,
