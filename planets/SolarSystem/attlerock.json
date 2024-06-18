@@ -1,20 +1,12 @@
 {
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
     "name": "Attlerock",
-    "removeChildren": [
-        "Sector_THM/Characters_THM/Villager_HEA_Esker/ConversationZone_Esker"
-    ],
     "Props": {
         "dialogue": [
-            {
-                "range": 2,
-                "lookAtRadius": 2,
-                "isRelativeToParent": true,
-                "xmlFile": "planets/Dialogue/Esker.xml",
-                "pathToAnimController": "Sector_THM/Characters_THM/Villager_HEA_Esker",
-                "radius": 2,
-                "parentPath": "Sector_THM/Characters_THM/Villager_HEA_Esker"
-            }
+          {
+            "pathToExistingDialogue": "Sector_THM/Characters_THM/Villager_HEA_Esker/ConversationZone_Esker",
+            "xmlFile": "planets/Dialogue/Esker.xml"
+          }
         ]
     }
 }

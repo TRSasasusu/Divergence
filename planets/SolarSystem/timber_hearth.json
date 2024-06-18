@@ -2,7 +2,6 @@
     "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
     "name": "Timber Hearth",
     "removeChildren": [
-        "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/ConversationZone",
         "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)"
     ],
     "Props": {
@@ -28,9 +27,9 @@
                 "blockAfterPersistentCondition": "HORNFELS_CLUE"
             },
             {
-				"pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
-				"xmlFile": "planets/Dialogue/Slate.xml"
-			},
+				        "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
+				        "xmlFile": "planets/Dialogue/Slate.xml"
+			      },
             {
                 "range": 2,
                 "lookAtRadius": 3,
@@ -45,19 +44,10 @@
                     "z": 0.3018
                 }
             },
-            {
-                "range": 2,
-                "pathToAnimController": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/Villager_HEA_Hal_ANIM_Museum",
-                "isRelativeToParent": true,
-                "xmlFile": "planets/Dialogue/Hal_Museum.xml",
-                "radius": 2,
-                "position": {
-                    "x": 0,
-                    "y": 1.5218,
-                    "z": 0.25
-                },
-                "lookAtRadius": 1
-            }
+          {
+            "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/ConversationZone",
+            "xmlFile": "planets/Dialogue/Hal_Museum.xml"
+          }
         ],
         "details": [
             {
@@ -68,7 +58,6 @@
                     "y": 176.4263,
                     "z": 42.2268
                 },
-                "removeComponents": false,
                 "removeChildren": [
                     "ConversationZone_Hornfels"
                 ],

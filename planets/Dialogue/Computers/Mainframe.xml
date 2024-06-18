@@ -367,7 +367,7 @@
 	<DialogueNode>
 		<Name>DisableBlocker</Name>
 		<Dialogue>
-			<Page>ERROR: Operation not permitted. Reason: Permission denied.</Page>
+			<Page>ERROR: Operation not permitted. REASON: Permission denied.</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
 	</DialogueNode>
