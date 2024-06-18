@@ -4,7 +4,7 @@
     "name": "Divergence",
     "uniqueName": "artificialparanoia.Divergence",
     "version": "1.0.3",
-    "owmlVersion": "2.9.8",
+    "owmlVersion": "2.13.0",
     "dependencies": [
         "xen.NewHorizons"
     ]
