@@ -21,25 +21,69 @@
                 "identificationRadius": 2
             }
         ],
-        "dialogue": [
-            {
-                "range": 2,
-                "lookAtRadius": 0,
-                "radius": 0,
-                "position": {
-                    "x": -1400.169,
-                    "y": 12.41371,
-                    "z": 6000.025
-                },
-                "remoteTriggerPosition": {
-                    "x": -1400.169,
-                    "y": 12.41371,
-                    "z": 6000.025
-                },
-                "remoteTriggerRadius": 5,
-                "xmlFile": "planets/Dialogue/Acetate.xml",
-                "parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory"
-            }
-        ]
+      "dialogue": [
+        {
+          "range": 2,
+          "lookAtRadius": 2,
+          "radius": 2,
+          "position": {
+            "x": 0,
+            "y": 1.1382,
+            "z": 0
+          },
+          //"remoteTriggerPosition": {
+          //  "x": -1400.169,
+          //  "y": 12.41371,
+          //  "z": 6000.025
+          //},
+          //"remoteTriggerRadius": 5,
+          "xmlFile": "planets/Dialogue/Acetate.xml",
+          "parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory/Acetate",
+          "isRelativeToParent": true
+        }
+      ],
+      "details": [
+        {
+          "scale": 1,
+          "path": "TimeLoopRing_Body/Characters_TimeLoopRing/NPC_Player",
+          "rename": "Acetate",
+          "parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory",
+          "position": {
+            "x": 8.0162,
+            "y": 11.6236,
+            "z": -0.873
+          },
+          "rotation": {
+            "x": 0.002021888,
+            "y": 273.1498,
+            "z": -0.0004192188
+          },
+          "removeChildren": [
+            "Traveller_LightingRig",
+            "ConversationZone_NPC_Player",
+            "Traveller_Mesh_v01:Props_HEA_Jetpack",
+            "Props_HEA_Lantern"
+          ],
+          "isRelativeToParent":  true
+        },
+        {
+          "scale": 1,
+          "assetBundle": "planets/assetbundles/inhabitantkit",
+          "path": "Assets/owlk ruins/prefabs/Prefab_IP_DreamLanternItem_Acetate.prefab",
+          "rename": "AcetateLantern",
+          "parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory/Acetate",
+          "position": {
+            "x": 2.0536,
+            "y": 0,
+            "z": 0.6982
+          },
+          "rotation": {
+            "x": 0.002,
+            "y": 273.1498,
+            "z": -0.0004
+          },
+          "isRelativeToParent": true
+        }
+      ]
     }
 }
