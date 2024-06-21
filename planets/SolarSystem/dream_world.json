@@ -96,13 +96,13 @@
             {
                 "type": "blackHole",
                "uniqueID": "MainframeWarpStart",
-                "position": {
-                    "x": -4.503479,
-                    "y": -303.7763,
-                    "z": 662.3726
-                },
+              "position": {
+                "x": -4.3309,
+                "y": -347.1949,
+                "z": 651.6757
+              },
                 "pairedSingularity": "MainframeWarpEnd",
-                "horizonRadius": 4,
+                "horizonRadius": 50,
                 "rename": "BellWarpSender"
             },
           {
