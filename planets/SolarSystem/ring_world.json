@@ -207,6 +207,71 @@
         },
         "parentPath": "Sector_RingWorld/Sector_ObservationDeck/Props_ObservationDeck/OtherComponentsGroup",
         "isRelativeToParent": true
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Lighting_StartingCamp/OtherComponentsGroup/Props_HEA_Lantern (1)",
+        "rotation": {
+          "x": 314.354126,
+          "y": 242.06163,
+          "z": 270.000031
+        },
+        "position": {
+          "x": 102.600922,
+          "y": -84.12356,
+          "z": -190.902863
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Lighting_StartingCamp/OtherComponentsGroup/Props_HEA_Lantern (1)",
+        "rotation": {
+          "x": 305.472351,
+          "y": 242.061615,
+          "z": 270.000031
+        },
+        "position": {
+          "x": 109.833252,
+          "y": -131.870331,
+          "z": -200.650146
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Lighting_StartingCamp/OtherComponentsGroup/Props_HEA_Lantern (1)",
+        "rotation": {
+          "x": 272.3531,
+          "y": 242.06218,
+          "z": 269.999451
+        },
+        "position": {
+          "x": 105.816437,
+          "y": -150.265289,
+          "z": -202.78067
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Lighting_StartingCamp/OtherComponentsGroup/Props_HEA_Lantern (1)",
+        "rotation": {
+          "x": 46.84729,
+          "y": 62.06168,
+          "z": 90.0000153
+        },
+        "position": {
+          "x": 93.2997055,
+          "y": -147.024384,
+          "z": -206.0228
+        }
+      },
+      {
+        "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_StartingCamp/Lighting_StartingCamp/OtherComponentsGroup/Props_HEA_Lantern (1)",
+        "rotation": {
+          "x": 305.2106,
+          "y": 239.848663,
+          "z": 269.999634
+        },
+        "position": {
+          "x": 105.040039,
+          "y": -78.7756348,
+          "z": -190.690033
+        }
       }
     ],
     "signals": [
