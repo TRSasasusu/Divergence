@@ -324,9 +324,7 @@
               "z": 356.12
             },
             "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
-            //"parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior/Prefab_IP_VisionTorchProjector",
             "keepLoaded": true
-            //"isRelativeToParent": false
           },
           {
             "scale": 1,
@@ -341,9 +339,7 @@
               "z": 0
             },
             "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
-            //"parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior/Prefab_IP_VisionTorchProjector",
             "keepLoaded": true
-            //"isRelativeToParent": false
           },
           {
             "scale": 0.25,
@@ -358,7 +354,6 @@
               "z": 180
             },
             "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch/Effects_IP_SIM_GhostBirdVisionConeFocused",
-            //"parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior",
             "keepLoaded": true
           }
         ],

@@ -24,6 +24,15 @@
 		<Text>What did you want to talk to me about?</Text>
 		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
 	  </DialogueOption>
+	  <DialogueOption>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
+	  <DialogueOption>
+		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
+		<Text>What's that dark spot in that photograph?</Text>
+		<DialogueTarget>CuratorEclipse</DialogueTarget>
+	  </DialogueOption>
       <DialogueOption>
         <Text>No thanks, I’m good.</Text>
         <DialogueTarget>Curator14</DialogueTarget>
@@ -49,18 +58,6 @@
       <Page>Test-piloted everything Slate ever built! It’s a wonder Feldspar lived to see space, frankly, but they did. Flew all sorts of dangerous stunts and explored everything they could find.</Page>
       <Page>And then one day, they just... didn’t come back. We don’t know what happened, or where Feldspar went, or even whether they’re still alive.</Page>
       <Page>It’s been a long time since they left.</Page>
-    </Dialogue>
-    <DialogueTarget>Curator13_New</DialogueTarget>
-  </DialogueNode>
-
-  <DialogueNode>
-    <Name>CuratorEyesOpen</Name>
-    <Dialogue>
-      <Page>What? You say the statue opened its eyes and looked at you?!</Page>
-      <Page>...How wonderful for you.</Page>
-      <Page>No, truly, that’s wonderful! It really is. ...Even if I <![CDATA[<i>]]>have<![CDATA[</i>]]> been pouring over it every night for weeks. It’s stupendous you were able to get a reaction from the statue just by glancing at it a few times.</Page>
-      <Page>Ergh, sorry, that’s not a very scientific thing to say, is it? I <![CDATA[<i>]]>am<![CDATA[</i>]]> glad. I’m just also insufferably, <![CDATA[<i>]]>profoundly<![CDATA[</i>]]> jealous. You’ll have to forgive me.</Page>
-      <Page>That aside - I have research to do! I wonder why the statue opened its eyes. Surely this means they aren’t mere decorative ornaments...?</Page>
     </Dialogue>
     <DialogueTarget>Curator13_New</DialogueTarget>
   </DialogueNode>
@@ -102,8 +99,8 @@
 		<Dialogue>
 			<Page>The last place that they went to before they went missing was the <![CDATA[<color=orange>Lunar Outpost</color>]]>, on the Attlerock. We don't use it much anymore, but back in the day it was vital for the exploration of our solar system.</Page>
 			<Page>I'd ask Esker if they remember anything about it, on the off chance that they do. It seems to me that there aren't really any leads as to where Acetate could have gone, unfortunately, and I don't necessarily expect for you to find anything useful on your own.</Page>
-			<Page>Still though, it's nice to get a new pair of eyes on it after all of these years. I won't be too dissapointed if you don't get anywhere, but at the same time I very much appreciate your willingness to help. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.</Page>
-			<Page>Did you need anything else while you were here? It wasn't my intent to keep you, and I would be very interested in anything else that you have to say. If you do learn anything about Acetate, however, do not hesitate to let me know.</Page>
+			<Page>Still though, it's nice to get a new set of eyes on it after all of these years. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.</Page>
+			<Page>Forgive me. I do realize that you're likely itching to get back to exploring. Was there something else you wished to discuss before heading off?</Page>
 		</Dialogue>
 		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
@@ -122,7 +119,7 @@
 		<!--<DialogueOption>
 			<RequiredPersistentCondition>QM_TRANSPORT_SIXTHLOCATION</RequiredPersistentCondition>
 			<Text>I think I know what happened to Acetate...</Text>
-			<DialogueTarget>CuratorFeldsparFound</DialogueTarget>
+			<DialogueTarget>CuratorAcetateFound</DialogueTarget>
 		</DialogueOption>-->
 		<DialogueOption>
 			<RequiredPersistentCondition>MetFeldspar</RequiredPersistentCondition>
@@ -150,8 +147,6 @@
       <Page>Take care!</Page>
     </Dialogue>
   </DialogueNode>
-	
-  <!--Divergence-->
 
   <DialogueNode>
     <Name>CuratorEyesOpenLoop2_New</Name>
@@ -198,8 +193,19 @@
 		<EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
 		<EntryCondition>TalkedToCurator</EntryCondition>
 		<Dialogue>
-			<Page>Hello again. I'm still trying to wrap my head around why that statue suddenly opened its eyes. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> Oh well, I suppose I'll figure it out another time.</Page>
+			<Page>Hello again. I'm still trying to wrap my head around why that statue suddenly opened its eyes. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> Oh well, I suppose I'll figure it out eventually.</Page>
 			<Page>Was there something you needed?</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13_New</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CuratorEclipse</Name>
+		<Dialogue>
+			<Page>Ah, so you noticed that too, did you? Chert thinks it has something to do with Dark Bramble, but my working theory is that it was actually the result of a perfectly-timed blast of solar radiation in the orbital path of satellite.</Page>
+			<Page>Luckily it seemed caused no permanent damage, considering Gabbro didn't find anything wrong. I suppose there could be another explanation for it, but I'm almost certain it was just an extraordinary coincidence.</Page>
+			<Page>On a related note, I almost debated on using that particular photograph as kindling for my campfire out there, but I figure that its historical significance far outweighs a little blemish with a fascinating origin story.</Page>
+			<Page>Anything else that you're curious about before continuing with your expedition?</Page>
 		</Dialogue>
 		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
