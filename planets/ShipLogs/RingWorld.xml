@@ -148,7 +148,7 @@
 	</ExploreFact>
 	<ExploreFact>
        <ID>IP_ACETATE_LOG_SHIPBAY</ID>
-       <Text>Acetate managed to miraculously recover the pilot seat from their ship, but decided that it wasn't worth the effort to haul it to their camp at the top of the dam.</Text>
+       <Text>Acetate managed to miraculously recover the pilot seat from their ship, but decided that it wasn't worth the effort to haul it to their shelter in the building connected to the dam.</Text>
     </ExploreFact>
 	<ExploreFact>
 	   <ID>IP_ACETATE_LOG_SECRETLAB</ID>
@@ -156,7 +156,7 @@
 	 </ExploreFact>
 	 <ExploreFact>
 	   <ID>IP_ACETATE_LOG_SIGNALBLOCKER</ID>
-	   <Text>Acetate thought that the secret to reestablishing a connection to the Signal Blocker lies inside of the sealed vault, but they were dismayed at the fact that the codes in the Cinder Isles were destroyed. They then decided to go get some rest at their "camp" near the top of the dam.</Text>
+	   <Text>Acetate thought that the secret to reestablishing a connection to the Signal Blocker lies inside of the sealed vault, but they were dismayed at the fact that the codes in the Cinder Isles were destroyed. They then decided to go get some rest at their makeshift "home" in the building that's connected to the dam.</Text>
 	 </ExploreFact>
 	 <ExploreFact>
        <ID>IP_ACETATE_LOG_EYESHRINE</ID>
