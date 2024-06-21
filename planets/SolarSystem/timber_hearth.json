@@ -5,50 +5,54 @@
         "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels (1)"
     ],
     "Props": {
-        "dialogue": [
-            {
-                "range": 2,
-                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
-                "lookAtRadius": 0,
-                "position": {
-                    "x": 17.21925,
-                    "y": -40.32771,
-                    "z": 186.2621
-                },
-                "radius": 0,
-                "xmlFile": "planets/Dialogue/Slate_Remote.xml",
-                "remoteTriggerPosition": {
-                    "x": 7.0847,
-                    "y": -42.2857,
-                    "z": 187.84
-                },
-                "remoteTriggerRadius": 3,
-                "remoteTriggerPrereqCondition": "LOOP_COUNT_GOE_3",
-                "blockAfterPersistentCondition": "HORNFELS_CLUE"
-            },
-            {
-				        "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
-				        "xmlFile": "planets/Dialogue/Slate.xml"
-			      },
-            {
-                "range": 2,
-                "lookAtRadius": 3,
-                "radius": 2,
-                "pathToAnimController": "Sector_TH/Villager_HEA_Hornfels_RadioTower/Villager_HEA_Hornfels_ANIM_Working",
-                "isRelativeToParent": true,
-                "xmlFile": "planets/Dialogue/Hornfels.xml",
-                "parentPath": "Sector_TH/Villager_HEA_Hornfels_RadioTower/",
-                "position": {
-                    "x": 1.0545,
-                    "y": 1.5672,
-                    "z": 0.3018
-                }
-            },
-          {
-            "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/ConversationZone",
-            "xmlFile": "planets/Dialogue/Hal_Museum.xml"
+      "dialogue": [
+        {
+          "range": 2,
+          "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+          "lookAtRadius": 0,
+          "position": {
+            "x": 17.21925,
+            "y": -40.32771,
+            "z": 186.2621
+          },
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Slate_Remote.xml",
+          "remoteTriggerPosition": {
+            "x": 7.0847,
+            "y": -42.2857,
+            "z": 187.84
+          },
+          "remoteTriggerRadius": 3,
+          "remoteTriggerPrereqCondition": "LOOP_COUNT_GOE_3",
+          "blockAfterPersistentCondition": "HORNFELS_CLUE"
+        },
+        {
+          "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Villager_HEA_Hornfels/ConversationZone_Hornfels",
+          "xmlFile": "planets/Dialogue/Hornfels.xml"
+        },
+        {
+          "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/ConversationZone_RSci",
+          "xmlFile": "planets/Dialogue/Slate.xml"
+        },
+        {
+          "range": 2,
+          "lookAtRadius": 3,
+          "radius": 2,
+          "pathToAnimController": "Sector_TH/Villager_HEA_Hornfels_RadioTower/Villager_HEA_Hornfels_ANIM_Working",
+          "isRelativeToParent": true,
+          "xmlFile": "planets/Dialogue/Hornfels_RadioTower.xml",
+          "parentPath": "Sector_TH/Villager_HEA_Hornfels_RadioTower/",
+          "position": {
+            "x": 1.0545,
+            "y": 1.5672,
+            "z": 0.3018
           }
-        ],
+        },
+        {
+          "pathToExistingDialogue": "Sector_TH/Sector_Village/Sector_Observatory/Characters_Observatory/Character_HEA_Hal_Museum/ConversationZone",
+          "xmlFile": "planets/Dialogue/Hal_Museum.xml"
+        }
+      ],
         "details": [
             {
                 "scale": 1,
