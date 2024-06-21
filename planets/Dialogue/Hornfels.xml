@@ -25,10 +25,6 @@
 		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
 	  </DialogueOption>
 	  <DialogueOption>
-		<Text>What did you want to talk to me about?</Text>
-		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
-	  </DialogueOption>
-	  <DialogueOption>
 		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
 		<Text>What's that dark spot in that photograph?</Text>
 		<DialogueTarget>CuratorEclipse</DialogueTarget>
