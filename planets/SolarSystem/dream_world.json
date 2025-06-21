@@ -26,7 +26,12 @@
         "Sector_DreamWorld/GrasslandsWarpSender/BlackHoleEmissionOneShot",
         "Sector_DreamWorld/GrasslandsWarpSender/BlackHoleRenderer",
         "Sector_DreamWorld/GrasslandsWarpReceiver/WhiteHoleAmbience",
-        "Sector_DreamWorld/GrasslandsWarpReceiver/WhiteHoleRenderer"
+        "Sector_DreamWorld/GrasslandsWarpReceiver/WhiteHoleRenderer",
+        "Sector_DreamWorld/TowerExitWarpSender/BlackHoleAmbience",
+        "Sector_DreamWorld/TowerExitWarpSender/BlackHoleEmissionOneShot",
+        "Sector_DreamWorld/TowerExitWarpSender/BlackHoleRenderer",
+        "Sector_DreamWorld/TowerExitWarpReceiver/WhiteHoleAmbience",
+        "Sector_DreamWorld/TowerExitWarpReceiver/WhiteHoleRenderer"
     ],
     "Props": {
         "dialogue": [
@@ -157,11 +162,7 @@
             "type": "whiteHole",
             "uniqueID": "TowerWarpEnd",
             "size": 2,
-            "position": {
-              "x": -31.14455,
-              "y": 49.67508,
-              "z": -185.9736
-            },
+            "position": {"x": 58.6075, "y": -2.1, "z": -224.8883}, //TODO: Put this closer to the elevator once NH allows for manually specifying sectors!
             "pairedSingularity": "TowerWarpStart",
             "rename": "TowerWarpReceiver"
           },
@@ -212,6 +213,30 @@
             },
             "pairedSingularity": "GrasslandsWarpStart",
             "rename": "GrasslandsWarpReceiver"
+          },
+          {
+            "type": "blackHole",
+            "uniqueID": "TowerExitWarpStart",
+            "size": 2,
+            "position": {
+              "x": -30.5,
+              "y": 24.759,
+              "z": -192.7127
+            },
+            "pairedSingularity": "TowerExitWarpEnd",
+            "rename": "TowerExitWarpSender"
+          },
+          {
+            "type": "whiteHole",
+            "uniqueID": "TowerExitWarpEnd",
+            "size": 2,
+            "position": {
+              "x": -31.14455,
+              "y": 49.67508,
+              "z": -185.9736
+            },
+            "pairedSingularity": "TowerExitWarpStart",
+            "rename": "TowerExitWarpReceiver"
           }
         ],
         "details": [
@@ -311,21 +336,6 @@
                     "z": 180
                 }
             },
-          {
-            "scale": 1,
-            "position": {
-              "x": -26.85139,
-              "y": 22.86302,
-              "z": -185.9739
-            },
-            "rotation": {
-              "x": 354.4057,
-              "y": 97.4029,
-              "z": 356.12
-            },
-            "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
-            "keepLoaded": true
-          },
           {
             "scale": 1,
             "position": {
