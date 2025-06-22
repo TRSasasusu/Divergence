@@ -51,7 +51,6 @@
 
 	<DialogueNode>
 		<Name>FreqRangeLow</Name>
-		<SetCondition>FreqCorrect_Woodlands</SetCondition>
 		<Dialogue>
 			<Page>Calibrating using keyword ETERNITY...</Page>
 		</Dialogue>

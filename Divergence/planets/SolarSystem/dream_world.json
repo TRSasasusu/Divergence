@@ -34,69 +34,180 @@
         "Sector_DreamWorld/TowerExitWarpReceiver/WhiteHoleRenderer"
     ],
     "Props": {
-        "dialogue": [
-            {
-                "range": 2,
-                "radius": 2,
-                "xmlFile": "planets/Dialogue/Computers/Mainframe.xml",
-                "position": {
-                    "x": -31.05546,
-                    "y": 24.4664,
-                    "z": -186.142
-                }
-            },
-          {
-            "range": 2,
-            "radius": 0,
-            "xmlFile": "planets/Dialogue/Computers/CodeComputer_Woodlands.xml",
-            "position": {
-              "x": 121.6995,
-              "y": -293.4243,
-              "z": 512.9449
-            },
-            "remoteTriggerPosition": {
-              "x": 122.1596,
-              "y": -296.0399,
-              "z": 510.9233
-            },
-            "remoteTriggerRadius": 2,
-            "remoteTriggerPrereqCondition": "CodeComputersActive"
-          },
-          {
-            "range": 2,
-            "radius": 0,
-            "xmlFile": "planets/Dialogue/Computers/CodeComputer_Cove.xml",
-            "position": {
-              "x": -11.67976,
-              "y": -277.4807,
-              "z": 368.8798
-            },
-            "remoteTriggerPosition": {
-              "x": -9.542465,
-              "y": -280,
-              "z": 368.9035
-            },
-            "remoteTriggerRadius": 2,
-            "remoteTriggerPrereqCondition": "CodeComputersActive"
-          },
-          {
-            "range": 2,
-            "radius": 0,
-            "xmlFile": "planets/Dialogue/Computers/CodeComputer_Canyon.xml",
-            "position": {
-              "x": -147.5223,
-              "y": -277.5885,
-              "z": 466.0355
-            },
-            "remoteTriggerPosition": {
-              "x": -146.0027,
-              "y": -280.5703,
-              "z": 468.7755
-            },
-            "remoteTriggerRadius": 2,
-            "remoteTriggerPrereqCondition": "CodeComputersActive"
+      "dialogue": [
+        {
+          "range": 2,
+          "radius": 2,
+          "xmlFile": "planets/Dialogue/Computers/Mainframe.xml",
+          "position": {
+            "x": -31.05546,
+            "y": 24.4664,
+            "z": -186.142
           }
-        ],
+        },
+        {
+          "rename": "WoodlandsAttempt1Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Woodlands.xml",
+          "position": {
+            "x": 121.6995,
+            "y": -293.4243,
+            "z": 512.9449
+          },
+          "remoteTriggerPosition": {
+            "x": 122.1596,
+            "y": -296.0399,
+            "z": 510.9233
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersActive"
+        },
+        {
+          "rename": "WoodlandsAttempt2Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Woodlands.xml",
+          "position": {
+            "x": 121.6995,
+            "y": -293.4243,
+            "z": 512.9449
+          },
+          "remoteTriggerPosition": {
+            "x": 122.1596,
+            "y": -296.0399,
+            "z": 510.9233
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersAttempt2"
+        },
+        {
+          "rename": "WoodlandsAttempt3Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Woodlands.xml",
+          "position": {
+            "x": 121.6995,
+            "y": -293.4243,
+            "z": 512.9449
+          },
+          "remoteTriggerPosition": {
+            "x": 122.1596,
+            "y": -296.0399,
+            "z": 510.9233
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersAttempt3"
+        },
+        {
+          "rename": "CoveAttempt1Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Cove.xml",
+          "position": {
+            "x": -11.67976,
+            "y": -277.4807,
+            "z": 368.8798
+          },
+          "remoteTriggerPosition": {
+            "x": -9.542465,
+            "y": -280,
+            "z": 368.9035
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersActive"
+        },
+        {
+          "rename": "CoveAttempt2Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Cove.xml",
+          "position": {
+            "x": -11.67976,
+            "y": -277.4807,
+            "z": 368.8798
+          },
+          "remoteTriggerPosition": {
+            "x": -9.542465,
+            "y": -280,
+            "z": 368.9035
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersAttempt2"
+        },
+        {
+          "rename": "CoveAttempt3Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Cove.xml",
+          "position": {
+            "x": -11.67976,
+            "y": -277.4807,
+            "z": 368.8798
+          },
+          "remoteTriggerPosition": {
+            "x": -9.542465,
+            "y": -280,
+            "z": 368.9035
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersAttempt3"
+        },
+        {
+          "rename": "CanyonAttempt1Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Canyon.xml",
+          "position": {
+            "x": -147.5223,
+            "y": -277.5885,
+            "z": 466.0355
+          },
+          "remoteTriggerPosition": {
+            "x": -146.0027,
+            "y": -280.5703,
+            "z": 468.7755
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersActive"
+        },
+        {
+          "rename": "CanyonAttempt2Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Canyon.xml",
+          "position": {
+            "x": -147.5223,
+            "y": -277.5885,
+            "z": 466.0355
+          },
+          "remoteTriggerPosition": {
+            "x": -146.0027,
+            "y": -280.5703,
+            "z": 468.7755
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersAttempt2"
+        },
+        {
+          "rename": "CanyonAttempt3Node",
+          "range": 2,
+          "radius": 0,
+          "xmlFile": "planets/Dialogue/Computers/CodeComputer_Canyon.xml",
+          "position": {
+            "x": -147.5223,
+            "y": -277.5885,
+            "z": 466.0355
+          },
+          "remoteTriggerPosition": {
+            "x": -146.0027,
+            "y": -280.5703,
+            "z": 468.7755
+          },
+          "remoteTriggerRadius": 2,
+          "remoteTriggerPrereqCondition": "CodeComputersAttempt3"
+        }
+      ],
         "singularities": [
             {
                 "type": "blackHole",

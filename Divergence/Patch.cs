@@ -421,7 +421,7 @@ namespace Divergence {
                             damState = $"0%(崩壊)";
                         }
                         else {
-                            damState = $"0% (COLLAPSED)";
+                            damState = $"0% (CATASTROPHIC FAILURE)";
                         }
                     }
                     else if(damIntegrity >= 99) {
@@ -448,7 +448,7 @@ namespace Divergence {
                             state = "炎に致命的なエラー";
                         }
                         else {
-                            state = "FATAL ERROR IN THE FLAMES";
+                            state = "ERROR";
                         }
                     }
                     __result = __result.Replace("{{STARLIT_COVE_STATE}}", state);
@@ -464,7 +464,7 @@ namespace Divergence {
                             state = "炎に致命的なエラー";
                         }
                         else {
-                            state = "FATAL ERROR IN THE FLAMES";
+                            state = "ERROR";
                         }
                     }
                     __result = __result.Replace("{{SHROUDED_WOODLANDS_STATE}}", state);
