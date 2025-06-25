@@ -278,6 +278,21 @@
                 }
             },
             {
+                "assetBundle": "planets/assetbundles/divergence",
+                "scale": 1,
+                "path": "Assets/Effects_IP_SIM_Symbol_Sarcophagus_01.prefab",
+                "position": {
+                    "x": -36.1786,
+                    "y": 26.95146,
+                    "z": -183.11
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 300,
+                    "z": 0
+                }
+            },
+            {
                 "scale": 1,
                 "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_A/Island_A/Interactibles_Island_A/Prefab_IP_DW_CodeTotem/CodeDisplay/Effects_IP_SIM_CodeTotem/CodeTotem_IconIndicator",
                 "position": {
@@ -308,12 +323,42 @@
                 }
             },
             {
+                "assetBundle": "planets/assetbundles/divergence",
+                "scale": 1,
+                "path": "Assets/Effects_IP_SIM_Symbol_Sarcophagus_02.prefab",
+                "position": {
+                    "x": -31.1234,
+                    "y": 26.95146,
+                    "z": -180.0639
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
                 "scale": 1,
                 "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_C/Island_C/Interactibles_Island_C/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_03",
                 "position": {
                     "x": -25.9872,
                     "y": 26.95146,
                     "z": -182.9565
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 60,
+                    "z": 0
+                }
+            },
+            {
+                "assetBundle": "planets/assetbundles/divergence",
+                "scale": 1,
+                "path": "Assets/Effects_IP_SIM_Symbol_Sarcophagus_03.prefab",
+                "position": {
+                    "x": -26.0214,
+                    "y": 26.9517,
+                    "z": -182.9762
                 },
                 "rotation": {
                     "x": 0,
