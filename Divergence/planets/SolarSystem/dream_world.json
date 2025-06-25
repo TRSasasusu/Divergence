@@ -350,23 +350,162 @@
             "rename": "TowerExitWarpReceiver"
           }
         ],
-      "details": [
-        {
-          "scale": 1,
-          "path": "Sector_DreamWorld/Sector_DreamZone_2/Structure_DreamZone_2/DreamFireHouse_2/Interactibles_DreamFireHouse_2/Prefab_IP_DreamArrivalPoint_Zone2",
-          "position": {
-            "x": -31.18409,
-            "y": 22.86298,
-            "z": -185.9917
-          }
-        },
-        {
-          "scale": 1.1,
-          "path": "Sector_DreamWorld/Sector_DreamZone_1/Structures_DreamZone_1/Generic_House_A/Prefab_IP_DW_Door_NoInterface",
-          "position": {
-            "x": -32.7355,
-            "y": 22.8155,
-            "z": -193.3447
+        "details": [
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_DreamZone_2/Structure_DreamZone_2/DreamFireHouse_2/Interactibles_DreamFireHouse_2/Prefab_IP_DreamArrivalPoint_Zone2",
+                "position": {
+                    "x": -31.18409,
+                    "y": 22.86298,
+                    "z": -185.9917
+                }
+            },
+            {
+                "scale": 1.1,
+                "path": "Sector_DreamWorld/Sector_DreamZone_1/Structures_DreamZone_1/Generic_House_A/Prefab_IP_DW_Door_NoInterface",
+                "position": {
+                    "x": -32.7355,
+                    "y": 22.8155,
+                    "z": -193.3447
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 355.429,
+                    "z": 0
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_A/Island_A/Interactibles_Island_A/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_01",
+                "position": {
+                    "x": -36.1786,
+                    "y": 26.95146,
+                    "z": -183.11
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 300,
+                    "z": 0
+                }
+            },
+            {
+                "assetBundle": "planets/assetbundles/divergence",
+                "scale": 1,
+                "path": "Assets/Effects_IP_SIM_Symbol_Sarcophagus_01.prefab",
+                "position": {
+                    "x": -36.1786,
+                    "y": 26.95146,
+                    "z": -183.11
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 300,
+                    "z": 0
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_A/Island_A/Interactibles_Island_A/Prefab_IP_DW_CodeTotem/CodeDisplay/Effects_IP_SIM_CodeTotem/CodeTotem_IconIndicator",
+                "position": {
+                    "x": -36.1786,
+                    "y": 26.95146,
+                    "z": -183.11
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 300,
+                    "z": 0
+                },
+                "parentPath": "Sector_DreamWorld/Sector_DreamZone_2/Simulation_DreamZone_2/Effects_Zone2",
+                "keepLoaded": true
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_B/Island_B/Interactibles_Island_B/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_02",
+                "position": {
+                    "x": -31.1234,
+                    "y": 26.95146,
+                    "z": -180.0639
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "assetBundle": "planets/assetbundles/divergence",
+                "scale": 1,
+                "path": "Assets/Effects_IP_SIM_Symbol_Sarcophagus_02.prefab",
+                "position": {
+                    "x": -31.1234,
+                    "y": 26.95146,
+                    "z": -180.0639
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "scale": 1,
+                "path": "Sector_DreamWorld/Sector_Underground/IslandsRoot/IslandPivot_C/Island_C/Interactibles_Island_C/Prefab_IP_DW_CodeTotem/Symbol_Sarcophagus_03",
+                "position": {
+                    "x": -25.9872,
+                    "y": 26.95146,
+                    "z": -182.9565
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 60,
+                    "z": 0
+                }
+            },
+            {
+                "assetBundle": "planets/assetbundles/divergence",
+                "scale": 1,
+                "path": "Assets/Effects_IP_SIM_Symbol_Sarcophagus_03.prefab",
+                "position": {
+                    "x": -26.0214,
+                    "y": 26.9517,
+                    "z": -182.9762
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 60,
+                    "z": 0
+                }
+            },
+            {
+                "path": "Sector_DreamWorld/Prefab_IP_VisionTorchProjector/VisionBeam",
+                "removeComponents": false,
+                "scale": 4.25,
+                "position": {
+                    "x": -31.19862,
+                    "y": 30.40617,
+                    "z": -185.9574
+                },
+                "rotation": {
+                    "x": 90,
+                    "y": 238.635,
+                    "z": 180
+                }
+            },
+          {
+            "scale": 1,
+            "position": {
+              "x": -29.926,
+              "y": 33.7664,
+              "z": -179.7224
+            },
+            "rotation": {
+              "x": 354.8344,
+              "y": 180,
+              "z": 0
+            },
+            "path": "Sector_DreamWorld/Sector_DreamZone_4/Interactibles_DreamZone_4_Upper/Prefab_IP_VisionTorchProjector/Effects_IP_SIM_VisionTorch",
+            "keepLoaded": true
           },
           "rotation": {
             "x": 0,

@@ -1,21 +1,40 @@
 ManifestFileVersion: 0
-CRC: 2689704538
+CRC: 4038481507
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2713c863ac1f8c20f7ffdb436fdf3526
+    Hash: 276452f4460286eaa47e8f07ca1208c3
   TypeTreeHash:
     serializedVersion: 2
-    Hash: f562b365ba45a9260cf3b374a06b51a7
+    Hash: fd1e43cbe91514d79706f05a6dbc40f8
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
 - Class: 4
   Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
 - Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: a582f0e1524af974c9589fe866709b70, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a5d1f69d626d8134fbd71388d008bcc6, type: 3}
+- Class: 115
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Effects_IP_SIM_Symbol_Sarcophagus_01.prefab
+- Assets/Effects_IP_SIM_Symbol_Sarcophagus_02.prefab
 - Assets/Props_HEA_FlightChair_Collider.prefab
+- Assets/Effects_IP_SIM_Symbol_Sarcophagus_03.prefab
 Dependencies: []
