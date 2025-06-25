@@ -500,9 +500,6 @@
 		<Name>Mainframe_Lockout</Name>
 		<EntryCondition>MainframeLockout</EntryCondition>
 		<Dialogue>
-			<Page>...</Page>
-			<Page>...</Page>
-			<Page>...</Page>
 			<Page>UNAUTHORIZED USER DETECTED. COMMUNICATION DENIED.</Page>
 		</Dialogue>
 	</DialogueNode>
