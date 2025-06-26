@@ -152,8 +152,8 @@
 	<DialogueNode>
 		<Name>Acetate_3a</Name>
 		<Dialogue>
-			<Page>What's the alternative? It's not like we really have anything we can go back to. This is <![CDATA[<i>]]>it<![CDATA[</i>]]>. Just you and me, staring at end of the everything.</Page>
-			<Page>Eternity is long time, my friend. We can wait here all you like, but eventually it's gonna happen. One way or another.</Page>
+			<Page>What's the alternative? It's not like we really have anything we can go back to. This is <![CDATA[<i>]]>it<![CDATA[</i>]]>. Just you and me, staring at the end of the everything.</Page>
+			<Page>Eternity is a long time, my friend. We can wait here all you like, but eventually it's gonna happen. One way or another.</Page>
 		</Dialogue>
 	</DialogueNode>
 	
