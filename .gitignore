@@ -399,3 +399,7 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 .idea
+
+Divergence/config.json
+
+Divergence/Divergence.dll
