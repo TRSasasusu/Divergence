@@ -521,9 +521,29 @@
           },
           "scale": 0.7,
           "removeComponents": true,
+          "removeChildren": [ "MuralDecal", "Wall_IP_DW_Half", "Wall_IP_DW_Full" ],
+          "path": "Sector_DreamWorld/Sector_DreamZone_3/Sector_Hotel/Interactibles_Hotel/Lobby/SecretMuralPassage",
+          "keepLoaded": true
+        },
+        {
+          "rename": "CellarWarpMural",
+          "position": {
+            "x": -25.4316,
+            "y": 22.9545,
+            "z": -187.621
+          },
+          "rotation": {
+            "x": 0,
+            "y": 117.2611,
+            "z": 0
+          },
+          "scale": 0.7,
+          "removeComponents": true,
+          "removeChildren": [ "MuralDecal", "Wall_IP_DW_Half", "Wall_IP_DW_Full" ],
           "path": "Sector_DreamWorld/Sector_DreamZone_3/Sector_Hotel/Interactibles_Hotel/Lobby/SecretMuralPassage",
           "keepLoaded": true
         }
+
       ],
         "slideShows": [
           {
