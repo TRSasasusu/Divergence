@@ -3,9 +3,109 @@
   <DialogueNode>
     <Name>Curator13_New</Name>
 	  <Dialogue>
-		  <Page>
-
-		  </Page>
+		  <Page>Was there something else you needed?</Page>
+	  </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I found something!</Text>
+        <DialogueTarget>CuratorDiscoveries</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are the other travelers?</Text>
+        <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Tell me more about Feldspar.</Text>
+        <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
+      </DialogueOption>
+	  <DialogueOption>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
+	  <DialogueOption>
+		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
+		<Text>What's that dark spot in that photograph?</Text>
+		<DialogueTarget>CuratorEclipse</DialogueTarget>
+	  </DialogueOption>
+      <DialogueOption>
+        <Text>No thanks, I’m good.</Text>
+        <DialogueTarget>Curator14</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>Curator13_New_Intro</Name>
+	  <Dialogue>
+		  <Page>Anyhow, enough about that. What about you? Anything you need before continuing your maiden voyage among the stars?</Page>
+	  </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I found something!</Text>
+        <DialogueTarget>CuratorDiscoveries</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are the other travelers?</Text>
+        <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Tell me more about Feldspar.</Text>
+        <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
+      </DialogueOption>
+	  <DialogueOption>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
+	  <DialogueOption>
+		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
+		<Text>What's that dark spot in that photograph?</Text>
+		<DialogueTarget>CuratorEclipse</DialogueTarget>
+	  </DialogueOption>
+      <DialogueOption>
+        <Text>No thanks, I’m good.</Text>
+        <DialogueTarget>Curator14</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>Curator13_New_Intro_Quick</Name>
+	  <Dialogue>
+		  <Page>Oh, yes. Certainly. What is it?</Page>
+	  </Dialogue>
+    <DialogueOptionsList>
+      <DialogueOption>
+        <Text>I found something!</Text>
+        <DialogueTarget>CuratorDiscoveries</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Where are the other travelers?</Text>
+        <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
+      </DialogueOption>
+      <DialogueOption>
+        <Text>Tell me more about Feldspar.</Text>
+        <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
+      </DialogueOption>
+	  <DialogueOption>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
+	  <DialogueOption>
+		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
+		<Text>What's that dark spot in that photograph?</Text>
+		<DialogueTarget>CuratorEclipse</DialogueTarget>
+	  </DialogueOption>
+      <DialogueOption>
+        <Text>No thanks, I’m good.</Text>
+        <DialogueTarget>Curator14</DialogueTarget>
+      </DialogueOption>
+    </DialogueOptionsList>
+  </DialogueNode>
+  
+  <DialogueNode>
+    <Name>Curator13_New_PostAcetate</Name>
+	  <Dialogue>
+		  <Page>Forgive me. I do realize that you're likely itching to get back to exploring. Was there something else you wished to discuss before heading off?</Page>
 	  </Dialogue>
     <DialogueOptionsList>
       <DialogueOption>
@@ -96,9 +196,8 @@
 			<Page>The last place that they went to before they went missing was the <![CDATA[<color=orange>Lunar Outpost</color>]]>, on the Attlerock. We don't use it much anymore, but back in the day it was vital for the exploration of our solar system.</Page>
 			<Page>I'd ask Esker if they remember anything about it, on the off chance that they do. It seems to me that there aren't really any leads as to where Acetate could have gone, unfortunately, and I don't necessarily expect for you to find anything useful on your own.</Page>
 			<Page>Still though, it's nice to get a new set of eyes on it after all of these years. It's hard to get over the guilt of something terrible happening to someone under your watch, especially when I was the one who encouraged them to become an astronaut in the first place.</Page>
-			<Page>Forgive me. I do realize that you're likely itching to get back to exploring. Was there something else you wished to discuss before heading off?</Page>
 		</Dialogue>
-		<DialogueTarget>Curator13_New</DialogueTarget>
+		<DialogueTarget>Curator13_New_PostAcetate</DialogueTarget>
 	</DialogueNode>
 
   <DialogueNode>
@@ -160,18 +259,10 @@
 		  <DialogueOption>
 			  <RequiredLogCondition>IP_RING_WORLD_X1</RequiredLogCondition>
 			  <Text>Hey, I'm in a hurry. Can I ask you something?</Text>
-			  <DialogueTarget>CuratorQuick</DialogueTarget>
+			  <DialogueTarget>Curator13_New_Intro_Quick</DialogueTarget>
 		  </DialogueOption>
 	  </DialogueOptionsList>
   </DialogueNode>
-
-	<DialogueNode>
-		<Name>CuratorQuick</Name>
-		<Dialogue>
-			<Page>Oh, yes. Certainly. What is it?</Page>
-		</Dialogue>
-		<DialogueTarget>Curator13_New</DialogueTarget>
-	</DialogueNode>
 
 	<DialogueNode>
 		<Name>CuratorRadioTower</Name>
@@ -179,9 +270,8 @@
 			<Page>Oh, well, crunching the numbers as they say. Mainly just wanted to get a little bit of peace and quiet. I tend to come here when the Observatory gets a little too... busy, for my liking - and sometimes it's very helpful for getting a different perspective on things.</Page>
 			<Page>Frankly, all of this ruckus surrounding the statue opening its eyes has proved a little bit too much for me at the moment. And of course Hal is asking a million questions, not that I can blame them.</Page>
 			<Page>Feel free to look around to your heart's content, if you'd like. These are some of the first images printed of our solar system in its entirety. Of course, not all of them are <![CDATA[<i>]]>perfect<![CDATA[</i>]]>, mind you, but it truly is impressive to look at it all from a distance. See if you can't spot Timber Hearth!</Page>
-			<Page>Anyhow, enough about that. What about you? Anything you need before continuing your maiden voyage among the stars?</Page>
 		</Dialogue>
-		<DialogueTarget>Curator13_New</DialogueTarget>
+		<DialogueTarget>Curator13_New_Intro</DialogueTarget>
 	</DialogueNode>
 
 	<DialogueNode>
@@ -190,7 +280,6 @@
 		<EntryCondition>TalkedToCurator</EntryCondition>
 		<Dialogue>
 			<Page>Hello again. I'm still trying to wrap my head around why that statue suddenly opened its eyes. <![CDATA[<Pause/>]]><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> Oh well, I suppose I'll figure it out eventually.</Page>
-			<Page>Was there something you needed?</Page>
 		</Dialogue>
 		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
@@ -201,7 +290,6 @@
 			<Page>Ah, so you noticed that too, did you? Chert thinks it has something to do with Dark Bramble, but my working theory is that it was actually the result of a perfectly-timed blast of solar radiation in the orbital path of satellite.</Page>
 			<Page>Luckily it seems to have caused no permanent damage, considering Gabbro didn't find anything wrong with the equipment. I suppose there could be another explanation for it, but I'm almost certain it was just an extraordinary coincidence.</Page>
 			<Page>On a related note, I almost debated on using that particular photograph as kindling for my campfire out there, but I figure that its historical significance far outweighs a little blemish with a fascinating origin story.</Page>
-			<Page>Anything else that you're curious about before continuing with your expedition?</Page>
 		</Dialogue>
 		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>

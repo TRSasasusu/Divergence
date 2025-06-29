@@ -33,8 +33,26 @@
 				<DialogueTarget>VerifyRingworld</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<CancelledCondition>AllowCodeComputerReset</CancelledCondition>
 				<Text>Activate remote signal interfaces.</Text>
 				<DialogueTarget>ActivateCodeComputers</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+			    <CancelledCondition>CodeComputersAttempt2</CancelledCondition>
+				<RequiredCondition>AllowCodeComputerReset</RequiredCondition>
+				<Text>Reset configuration of remote signal interfaces.</Text>
+				<DialogueTarget>ResetCodeComputers1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+			    <CancelledCondition>CodeComputersAttempt3</CancelledCondition>
+				<RequiredCondition>CodeComputersAttempt2</RequiredCondition>
+				<Text>Reset configuration of remote signal interfaces.</Text>
+				<DialogueTarget>ResetCodeComputers2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>CodeComputersAttempt3</RequiredCondition>
+				<Text>Reset configuration of remote signal interfaces.</Text>
+				<DialogueTarget>ResetCodeComputers3</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredCondition>CodeComputersActive</RequiredCondition>
@@ -65,8 +83,26 @@
 				<DialogueTarget>VerifyRingworld_Signal</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<CancelledCondition>AllowCodeComputerReset</CancelledCondition>
 				<Text>Activate remote signal interfaces.</Text>
-				<DialogueTarget>ActivateCodeComputers_Signal</DialogueTarget>
+				<DialogueTarget>ActivateCodeComputers</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+			    <CancelledCondition>CodeComputersAttempt2</CancelledCondition>
+				<RequiredCondition>AllowCodeComputerReset</RequiredCondition>
+				<Text>Reset configuration of remote signal interfaces.</Text>
+				<DialogueTarget>ResetCodeComputers1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+			    <CancelledCondition>CodeComputersAttempt3</CancelledCondition>
+				<RequiredCondition>CodeComputersAttempt2</RequiredCondition>
+				<Text>Reset configuration of remote signal interfaces.</Text>
+				<DialogueTarget>ResetCodeComputers2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>CodeComputersAttempt3</RequiredCondition>
+				<Text>Reset configuration of remote signal interfaces.</Text>
+				<DialogueTarget>ResetCodeComputers3</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<RequiredCondition>CodeComputersActive</RequiredCondition>
@@ -109,6 +145,7 @@
 	<DialogueNode>
 		<Name>ActivateCodeComputers</Name>
 		<SetCondition>CodeComputersActive</SetCondition>
+		<SetCondition>AllowCodeComputerReset</SetCondition>
 		<RevealFacts>
 			<FactID>IP_MAINFRAME_CODECOMPUTERS</FactID>
 			<FactID>IP_CODECOMPUTER_WOODLANDS_RUMOR_1</FactID>
@@ -120,6 +157,85 @@
 			<Page>Activating remote signal interface for Starlit Cove...</Page>
 			<Page>Activating remote signal interface for Shrouded Woodlands...</Page>
 			<Page>Remote signal interfaces activated. Awaiting calibration.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>ResetCodeComputers1</Name>
+		<Dialogue>
+			<Page>Are you sure you want to reset the configuration of the remote signal interfaces? You have 2 attempts remaining.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<ConditionToCancel>HasSetFreqCanyon</ConditionToCancel>
+				<ConditionToCancel>FreqCorrect_Canyon</ConditionToCancel>
+				<ConditionToCancel>HasSetFreqCove</ConditionToCancel>
+				<ConditionToCancel>FreqCorrect_Cove</ConditionToCancel>
+				<ConditionToCancel>HasSetFreqWoodlands</ConditionToCancel>
+				<ConditionToCancel>FreqCorrect_Woodlands</ConditionToCancel>
+				<Text>Yes.</Text>
+				<DialogueTarget>CodeResetDialog1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No.</Text>
+				<DialogueTarget>Mainframe_Main</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>ResetCodeComputers2</Name>
+		<Dialogue>
+			<Page>Are you sure you want to reset the configuration of the remote signal interfaces? You have 1 attempt remaining.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<ConditionToCancel>HasSetFreqCanyon</ConditionToCancel>
+				<ConditionToCancel>FreqCorrect_Canyon</ConditionToCancel>
+				<ConditionToCancel>HasSetFreqCove</ConditionToCancel>
+				<ConditionToCancel>FreqCorrect_Cove</ConditionToCancel>
+				<ConditionToCancel>HasSetFreqWoodlands</ConditionToCancel>
+				<ConditionToCancel>FreqCorrect_Woodlands</ConditionToCancel>
+				<Text>Yes.</Text>
+				<DialogueTarget>CodeResetDialog2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No.</Text>
+				<DialogueTarget>Mainframe_Main</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>ResetCodeComputers3</Name>
+		<SetCondition>MainframeLockout</SetCondition>
+		<Dialogue>
+			<Page>ERROR: Cannot reset remote signal interfaces. REASON: Permission Denied</Page>
+			<Page>UNAUTHORIZED USER DETECTED.<![CDATA[<Pause/>]]> YOU DO NOT BELONG HERE.<![CDATA[<Pause/>]]> LEAVE.</Page>
+		</Dialogue>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CodeResetDialog1</Name>
+		<SetCondition>CodeComputersAttempt2</SetCondition>
+		<Dialogue>
+			<Page>Resetting configuration of remote signal interface for Endless Canyon...</Page>
+			<Page>Resetting configuration of remote signal interface for Starlit Cove...</Page>
+			<Page>Resetting configuration of remote signal interface for Shrouded Woodlands...</Page>
+			<Page>Configuration reset. Awaiting calibration.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_Main</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>CodeResetDialog2</Name>
+		<SetCondition>CodeComputersAttempt3</SetCondition>
+		<Dialogue>
+			<Page>Resetting configuration of remote signal interface for Endless Canyon...</Page>
+			<Page>Resetting configuration of remote signal interface for Starlit Cove...</Page>
+			<Page>Resetting configuration of remote signal interface for Shrouded Woodlands...</Page>
+			<Page>Configuration reset. Awaiting calibration.</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main</DialogueTarget>
 	</DialogueNode>
@@ -378,6 +494,14 @@
 			<Page>Ending transmission with Signal Capture Satellite...</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<Name>Mainframe_Lockout</Name>
+		<EntryCondition>MainframeLockout</EntryCondition>
+		<Dialogue>
+			<Page>UNAUTHORIZED USER DETECTED. COMMUNICATION DENIED.</Page>
+		</Dialogue>
 	</DialogueNode>
 
 </DialogueTree>

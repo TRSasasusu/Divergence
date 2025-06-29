@@ -41,7 +41,6 @@
 
 	<DialogueNode>
 		<Name>FreqRangeMedium</Name>
-		<SetCondition>FreqCorrect_Canyon</SetCondition>
 		<Dialogue>
 			<Page>Calibrating using keyword FORESIGHT...</Page>
 		</Dialogue>

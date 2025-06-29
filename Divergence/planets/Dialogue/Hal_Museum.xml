@@ -12,7 +12,7 @@
   <DialogueNode>
     <Name>RadioTowerHint</Name>
     <Dialogue>
-      <Page>What? Oh, yeah! They wanted me to tell you that they're over by the <![CDATA[<color=orange>Radio Tower</color>]]>. Something about the statue opening its eyes reminding them of something? I dunno.</Page>
+      <Page>Didn't Slate tell you? Hornfels headed over to the <![CDATA[<color=orange>Radio Tower</color>]]> just a minute ago. Something about the statue opening its eyes reminding them of something? I dunno.</Page>
       <Page>You should have seen them run out of here, though. It was <![CDATA[<i>]]>wild<![CDATA[</i>]]>. I had no idea Hornfels still had that in them.</Page>
     </Dialogue>
   </DialogueNode>

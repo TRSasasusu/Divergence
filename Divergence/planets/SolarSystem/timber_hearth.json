@@ -42,6 +42,16 @@
           "isRelativeToParent": true,
           "xmlFile": "planets/Dialogue/Hornfels_RadioTower.xml",
           "parentPath": "Sector_TH/Villager_HEA_Hornfels_RadioTower/",
+          "attentionPoint": {
+            "isRelativeToParent": true,
+            "parentPath": "Sector_TH/Villager_HEA_Hornfels_RadioTower/",
+            "position": {
+              "x": 0,
+              "y": 1.808,
+              "z": 0
+            },
+
+          },
           "position": {
             "x": 1.0545,
             "y": 1.5672,

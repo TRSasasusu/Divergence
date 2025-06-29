@@ -6,10 +6,15 @@
 		<EntryCondition>DEFAULT</EntryCondition>
 		<SetPersistentCondition>HORNFELS_CLUE</SetPersistentCondition>
 		<Dialogue>
-			<Page>Oh yeah, by the way, Hornfels wanted to talk to you. Said they wanted to mention something real quick while you're up there for the launch codes. No idea what it was about.</Page>
+			<Page>Oh yeah, by the way, Hornfels wanted me to tell you that they're gonna be over at the <![CDATA[<color=orange>Radio Tower</color>]]> for a bit. Something about the peace and quiet helping with their "productivity", whatever that means.</Page>
+			<Page>I think there's something else they wanted to talk to you about before giving you the launch codes. Not sure what it was, but it seemed important.</Page>
 		</Dialogue>
 
 		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Radio tower? What's that?</Text>
+				<DialogueTarget>Slate_Acetate_1</DialogueTarget>
+			</DialogueOption>
 			<DialogueOption>
 				<Text>Since when does Hornfels want to talk to <![CDATA[<i>]]>me<![CDATA[</i>]]>?</Text>
 				<DialogueTarget>Slate_Acetate_1a</DialogueTarget>
@@ -25,26 +30,34 @@
 		</DialogueOptionsList>
 	</DialogueNode>
 
+	
+	<DialogueNode>
+		<Name>Slate_Acetate_1</Name>
+		<Dialogue>
+			<Page>You know, <![CDATA[<i>]]>the<![CDATA[</i>]]><![CDATA[<color=orange> radio tower</color>]]>? The one that's just sitting there right outside of the crater? That one?</Page>
+			<Page><![CDATA[<color=grey>Sigh...</color>]]><![CDATA[<Pause/>]]> They really just let anyone become a pilot these days. Maybe you should try getting to know your own planet before you head out into <![CDATA[<i>]]>space<![CDATA[</i>]]>. Just a thought.</Page>
+		</Dialogue>
+	</DialogueNode>
 	<DialogueNode>
 		<Name>Slate_Acetate_1a</Name>
 		<Dialogue>
-			<Page>Since you became an astronaut, idiot! Don't forget that you're a bona fide member of Outer Wilds Ventures, now! Hard to beleive, I know, but it's true.</Page>
-			<Page>Plus you gotta get the launch codes anyway. Unless you already have them, in which case go do whatever space things you want to do first. Just... try not to crash into the <![CDATA[<color=orange>Observatory</color>]]> on the way back, alright? Last time that happened the whole thing almost caught on fire.</Page>
+			<Page>Since you became an astronaut, idiot! Don't forget that you're a bona fide member of Outer Wilds Ventures, now! Hard to believe, I know, but it's true.</Page>
+			<Page>Plus you gotta get the launch codes anyway. Unless you already have them, in which case go do whatever space things you want to do first. Just... try not to crash into anything on the way back, alright? Last time that happened the whole village nearly caught on fire.</Page>
 		</Dialogue>
 	</DialogueNode>
 	<DialogueNode>
 		<Name>Slate_Acetate_1b</Name>
 		<Dialogue>
 			<Page><![CDATA[<i>]]>Hey!<![CDATA[</i>]]> I'm not the one in the wrong here! I'm just the messenger! It just so happens that I'm the messenger for a lot of different things, because no one else can be bothered to actually tell anyone anything.</Page>
-			<Page>They should still be up at the <![CDATA[<color=orange>Observatory</color>]]>, if I'm not mistaken. You'll have to go there and talk to Hornfels to pick up the launch codes anyway, so you might as well humor them with whatever they're going on about.</Page>
-			<Page>Shouldn't take too long, in any case. Unless you're one of those Hearthians who considers "being launched from a geyser pool up to the launch platform" as "saving on flight preparation time", in which case there's no hope for you. </Page>
+			<Page>You'll have to head to the <![CDATA[<color=orange>Radio Tower</color>]]> and talk to Hornfels anyway to pick up the launch codes, so you might as well humor them with whatever they're going on about.</Page>
+			<Page>Shouldn't take too long, in any case. Unless you're one of those Hearthians who considers "being launched from a geyser pool up to the launch platform" as "saving on flight preparation time", in which case I'm sure it'll feel like an <![CDATA[<i>]]>eternity<![CDATA[</i>]]>.</Page>
 		</Dialogue>
 	</DialogueNode>
 	<DialogueNode>
 		<Name>Slate_Acetate_1c</Name>
 		<Dialogue>
 			<Page>I think that's the most agreeable to anything that you've ever been. Should I be worried? Becoming a pilot really does change a Hearthian, huh.</Page>
-			<Page>Anyway, just head on up to the <![CDATA[<color=orange>Observatory</color>]]> when you get the chance. Sometimes it feels like they're incapable of leaving.</Page>
+			<Page>Anyway, just head on over to the <![CDATA[<color=orange>Radio Tower</color>]]> when you get the chance. No idea how you're gonna get there without your suit or ship, but that's not my problem.</Page>
 		</Dialogue>
 	</DialogueNode>
 	
