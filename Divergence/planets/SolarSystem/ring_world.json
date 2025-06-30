@@ -3,21 +3,21 @@
   "name": "RINGWORLD",
   "Props": {
     "details": [
-      {
-        "scale": 1,
-        "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
-        "rename": "AcetateSecretLabRecorder",
-        "position": {
-          "x": 194.3735,
-          "y": -155.3829,
-          "z": 191.5018
-        },
-        "rotation": {
-          "x": 337.9953,
-          "y": 314.6848,
-          "z": 90
-        }
-      },
+      //{
+      //  "scale": 1,
+      //  "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
+      //  "rename": "AcetateSecretLabRecorder",
+      //  "position": {
+      //    "x": 194.3735,
+      //    "y": -155.3829,
+      //    "z": 191.5018
+      //  },
+      //  "rotation": {
+      //    "x": 337.9953,
+      //    "y": 314.6848,
+      //    "z": 90
+      //  }
+      //},
       {
         "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/Interactables_StaticGeo/OtherComponentsGroup/Props_HEA_FlightChair",
@@ -103,24 +103,6 @@
         },
         "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4"
       },
-      //{
-      //  "scale": 1,
-      //  "path": "TimberHearth_Body/Sector_TH/Sector_Village/Sector_Observatory/Interactables_Observatory/Prefab_HEA_DeepFieldExhibit/DeepFieldNotes_1",
-      //  "keepLoaded": true,
-      //  "position": {
-      //    "x": 186.2138,
-      //    "y": 160.0338,
-      //    "z": -136.3331
-      //  },
-      //  "rotation": {
-      //    "x": -1.538961,
-      //    "y": 126.439,
-      //    "z": 180.0001
-      //  },
-      //  "parentPath": "Sector_RingInterior/Sector_Zone4/Sector_BlightedShore/Sector_JammingControlRoom_Zone4/Interactables_JammingControlRoom_Zone4",
-      //  "rename": "JammerNotes",
-      //  "removeComponents": true
-      //},
       {
         "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
