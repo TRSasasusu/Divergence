@@ -389,13 +389,13 @@
         "isRelativeToParent": true,
         "radius": 2
       },
-      {
-        "pathToAnimController": "Sector_RingWorld/AcetateSecretLabRecorder",
-        "parentPath": "Sector_RingWorld/AcetateSecretLabRecorder",
-        "xmlFile": "planets/Dialogue/Recordings/Acetate_SecretLab.xml",
-        "isRelativeToParent": true,
-        "radius": 2
-      },
+      //{
+      //  "pathToAnimController": "Sector_RingWorld/AcetateSecretLabRecorder",
+      //  "parentPath": "Sector_RingWorld/AcetateSecretLabRecorder",
+      //  "xmlFile": "planets/Dialogue/Recordings/Acetate_SecretLab.xml",
+      //  "isRelativeToParent": true,
+      //  "radius": 2
+      //},
       {
         "pathToAnimController": "Sector_RingInterior/Sector_Zone2/Structures_Zone2/EyeTempleRuins_Zone2/AcetateEyeShrineRecorder",
         "parentPath": "Sector_RingInterior/Sector_Zone2/Structures_Zone2/EyeTempleRuins_Zone2/AcetateEyeShrineRecorder",

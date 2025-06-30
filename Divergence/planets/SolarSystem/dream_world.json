@@ -352,15 +352,6 @@
         ],
       "details": [
         {
-          "scale": 1,
-          "path": "Sector_DreamWorld/Sector_DreamZone_3/Structures_DreamZone_3/DreamFireHouse_Zone_3/Interactibles_DreamFireHouse_3/Prefab_IP_DreamArrivalPoint_Zone3",
-          "position": {
-            "x": -31.18409,
-            "y": 22.86298,
-            "z": -185.9917
-          }
-        },
-        {
           "scale": 1.1,
           "path": "Sector_DreamWorld/Sector_DreamZone_1/Structures_DreamZone_1/Generic_House_A/Prefab_IP_DW_Door_NoInterface",
           "position": {
