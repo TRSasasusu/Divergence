@@ -424,6 +424,19 @@
         "isRelativeToParent": true,
         "radius": 2
       }
+    ],
+    "dreamCampfires": [
+      {
+        "rename": "IP_Dreamfire_Mainframe",
+        "id": "DREAMFIRE_MAINFRAME",
+        "position": {
+          "x": 0,
+          "y": 0.14,
+          "z": 1
+        },
+        "isRelativeToParent": true,
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3"
+      }
     ]
   },
   "ShipLog": {

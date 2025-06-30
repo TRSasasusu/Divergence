@@ -133,6 +133,10 @@
 			<ID>IP_ENTRANCE_CELLAR</ID>
 			<Text>I saw a vision of someone opening a secret passage in a cellar, and watched them walk down to the very end of a dark hallway filled with murals. </Text>
 		</ExploreFact>
+		<ExploreFact>
+			<ID>IP_MAINFRAME_DREAMFIRE</ID>
+			<Text>I saw a vision of someone with an artifact opening the door to a testing room, sleeping at a green fire before awakening in front of the Mainframe.</Text>
+		</ExploreFact>
 	</Entry>
   
   <Entry>
