@@ -12,7 +12,7 @@ Requires New Horizons and the Echoes of the Eye DLC for Outer Wilds.
 
 ## Credits
 
-Created, written, and designed by artificialparanoia.
+Created, written, and designed by artificialparanoia — with immense assistance from orclecle (Enhance Divergence, Japanese translation, general Unity help). 
 
 Featuring an excerpt of "Hearth's Shadow", by Andrew Prahlow (Echoes of the Eye: The Lost Reels).
 
