@@ -539,6 +539,16 @@
       "slideShows": [
         {
           "type": "standingVisionTorch",
+		  "position": {
+            "x": -29.926,
+            "y": 33.7664,
+            "z": -179.7224
+          },
+          "rotation": {
+            "x": 354.8344,
+            "y": 180,
+            "z": 0
+          },
           "slides": [
             {
               "imagePath": "graphics/slides/bell_warp/1.png",
@@ -610,16 +620,6 @@
               "imagePath": "graphics/slides/bell_warp/22.png"
             }
           ],
-          "position": {
-            "x": -29.926,
-            "y": 33.7664,
-            "z": -179.7224
-          },
-          "rotation": {
-            "x": 354.8344,
-            "y": 180,
-            "z": 0
-          },
           "reveals": [ "IP_ENTRANCE_LAKE" ],
           "playWithShipLogFacts": [ "IP_ENTRANCE_LAKE" ]
         },
