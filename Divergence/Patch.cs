@@ -399,7 +399,7 @@ namespace Divergence {
             }
             Divergence.Instance.ModHelper.Console.WriteLine("correctly assigned object variables related to mainframe text");
         }
-
+        
         //[HarmonyPrefix]
         //[HarmonyPatch(typeof(TranslatorWord), nameof(TranslatorWord.UpdateDisplayText))]
         //public static void TranslatorWord_UpdateDisplayText_Prefix(TranslatorWord __instance) {
