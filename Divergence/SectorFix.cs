@@ -15,8 +15,8 @@ namespace Divergence
             if (__instance.transform.parent.name.Contains("IP_Dreamfire_Mainframe"))
             {
                 Divergence.Instance.ModHelper.Console.WriteLine("Fixing Dreamfire sector stuff...");
-                var _SecretEntranceSector = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/SectorTrigger_SecretEntrance").GetComponent<Sector>();
-                _SecretEntranceSector.AddOccupant(Locator.GetPlayerSectorDetector());
+                var _SecretEntranceSector = GameObject.Find("RingWorld_Body/Sector_RingWorld/SectorTrigger_RingWorld").GetComponent<OWTriggerVolume>();
+                _SecretEntranceSector.AddObjectToVolume(Locator.GetPlayerDetector().gameObject);
             }
         }
     }
