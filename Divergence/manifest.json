@@ -6,5 +6,6 @@
   "uniqueName": "artificialparanoia.Divergence",
   "version": "1.0.8",
   "owmlVersion": "2.15.1",
-  "dependencies": ["xen.NewHorizons"]
+  "dependencies": [ "xen.NewHorizons" ],
+  "conflicts": [ "orclecle.TinyPatchForDivergence" ]
 }
