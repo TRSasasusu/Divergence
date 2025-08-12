@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using OWML.Common;
 using OWML.ModHelper;
 using UnityEngine;
 
@@ -11,13 +12,23 @@ namespace Divergence
         [HarmonyPatch(typeof(DreamCampfire), nameof(DreamCampfire.OnExitDreamWorld))]
         private static void DreamCampfire_OnExitDreamWorld(DreamCampfire __instance)
         {
-            Divergence.Instance.ModHelper.Console.WriteLine("Has exited the dreamworld.");
             if (__instance.transform.parent.name.Contains("IP_Dreamfire_Mainframe"))
             {
-                Divergence.Instance.ModHelper.Console.WriteLine("Fixing Dreamfire sector stuff...");
-                var _SecretEntranceSector = GameObject.Find("RingWorld_Body/Sector_RingWorld/SectorTrigger_RingWorld").GetComponent<OWTriggerVolume>();
-                _SecretEntranceSector.AddObjectToVolume(Locator.GetPlayerDetector().gameObject);
+                //Hack so that artifact lab visuals/audio work properly
+                var _LabDarkZone = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Volumes_SecretEntrance/DarkZone_SecretEntrance").GetComponent<OWTriggerVolume>();
+                _LabDarkZone.AddObjectToVolume(Locator.GetPlayerDetector().gameObject);
+                _LabDarkZone.AddObjectToVolume(Locator.GetPlayerCameraDetector().gameObject);
+                var _LabAudioVolume = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Volumes_SecretEntrance/AmbienceVolume_Lab").GetComponent<OWTriggerVolume>();
+                _LabAudioVolume.AddObjectToVolume(Locator.GetPlayerDetector().gameObject);
+                _LabAudioVolume.AddObjectToVolume(Locator.GetPlayerCameraDetector().gameObject);
             }
+        }
+
+        [HarmonyPostfix]
+        [HarmonyPatch(typeof(RingWorldController), nameof(RingWorldController.OnExitDreamWorld))]
+        public static void RingWorldController_OnExitDreamWorld_Postfix()
+        {
+            Locator.GetCloakFieldController().OnPlayerEnter.Invoke();
         }
     }
 }
