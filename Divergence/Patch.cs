@@ -1,9 +1,5 @@
 ﻿using HarmonyLib;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using IEnumerator = System.Collections.IEnumerator;
 
@@ -116,8 +112,6 @@ namespace Divergence {
         }
 
         static IEnumerator TuneRiverColor() {
-            Divergence.Instance.ModHelper.Console.WriteLine("tune river color");
-            //TessellatedRingRenderer tessellatedRingRenderer;
             while(true) {
                 yield return null;
                 var river = GameObject.Find("RingWorld_Body/Sector_RingInterior/Volumes_RingInterior/RingRiverFluidVolume/RingworldRiver");
@@ -132,7 +126,6 @@ namespace Divergence {
                 }
             }
 
-            Divergence.Instance.ModHelper.Console.WriteLine("tuning underwater color");
             while(true) {
                 yield return null;
                 var fluidOxygenVolume = GameObject.Find("RingWorld_Body/Sector_RingWorld/Volumes_RingWorld/FluidOxygenVolume");
@@ -192,7 +185,6 @@ namespace Divergence {
 
             while(true) {
                 yield return null;
-                //var originalLantern = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/Lanterns_DFH_Zone3/Prefab_IP_SimpleLanternItem_Zone3DFH_5");
                 var originalLantern = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone1/Sector_DreamFireHouse_Zone1/Interactables_DreamFireHouse_Zone1/Lanterns/Prefab_IP_SimpleLanternItem_Zone1DFH_4");
                 if(originalLantern) {
                     var lantern = GameObject.Instantiate(originalLantern);
@@ -210,13 +202,6 @@ namespace Divergence {
         }
 
         static IEnumerator TuneLighting() {
-            //while(true) {
-            //    yield return null;
-            //    var lightOnDeck = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_ObservationDeck/Lighting_ObservationDeck/OtherComponentsGroup/Prefab_IP_Lantern_Hanging/Prop_IP_Lantern_Hanging");
-            //    if(lightOnDeck) {
-            //        var 
-            //    }
-            //}
             while(true) {
                 yield return null;
                 var spotlightOnDeck = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_ObservationDeck/Lighting_ObservationDeck/OtherComponentsGroup/Prefab_IP_Lantern_Hanging/PointLight_Lantern_Large");
@@ -286,19 +271,16 @@ namespace Divergence {
         }
 
         static IEnumerator ChangeTextOfMainframe() {
-            Divergence.Instance.ModHelper.Console.WriteLine("change text of mainframe");
             while(true) {
                 yield return null;
                 var dreamWorldBody = GameObject.Find("DreamWorld_Body/Sector_DreamWorld");
                 if(!dreamWorldBody) {
                     continue;
                 }
-                //Divergence.Instance.ModHelper.Console.WriteLine("dream world body found");
                 var mainframeCDT = dreamWorldBody.GetComponentsInChildren<CharacterDialogueTree>().FirstOrDefault(x => x._characterName == "Mainframe");
                 if(!mainframeCDT) {
                     continue;
                 }
-                //Divergence.Instance.ModHelper.Console.WriteLine("mainframeCDT found");
                 var text = mainframeCDT._xmlCharacterDialogueAsset.text.Replace("DAY", "NIGHT")
                                                                        .Replace("<Page>SOLAR SAILS: OK</Page>", "<Page>SOLAR SAILS: OK</Page>\n<Page>DAM INTEGRITY: {{DAM_INTEGRITY}}</Page>")
                                                                        .Replace("STARLIT COVE: OK", "STARLIT COVE: {{STARLIT_COVE_STATE}}")
@@ -308,7 +290,6 @@ namespace Divergence {
                 mainframeCDT.SetTextXml(textAsset);
                 break;
             }
-            Divergence.Instance.ModHelper.Console.WriteLine("correctly change text of mainframe");
 
             foreach (var key in new string[] {
                 "VerifyRingworldARTIFICIAL LIGHTING: OK (STAGE: NIGHT)",
@@ -364,14 +345,7 @@ namespace Divergence {
                 else {
                     TextTranslation.s_theTable.m_table.theTable[key] = "Simulation integrity at {{SIMULATION_INTEGRITY}}. {{SIMULATION_MODULES_STATE}}";
                 }
-            }
-            Divergence.Instance.ModHelper.Console.WriteLine("correctly update translation of mainframe with some variables");
-            //Divergence.Instance.ModHelper.Console.WriteLine("look up keys of translation table");
-            //foreach(var key in TextTranslation.s_theTable.m_table.theTable.Keys) {
-            //    if(key.Contains("VerifyRingworld")) {
-            //        Divergence.Instance.ModHelper.Console.WriteLine($"{key}: {TextTranslation.s_theTable.m_table.theTable[key]}");
-            //    }
-            //}
+            }       
 
             while(true) {
                 yield return null;
@@ -397,20 +371,11 @@ namespace Divergence {
                     break;
                 }
             }
-            Divergence.Instance.ModHelper.Console.WriteLine("correctly assigned object variables related to mainframe text");
         }
         
-        //[HarmonyPrefix]
-        //[HarmonyPatch(typeof(TranslatorWord), nameof(TranslatorWord.UpdateDisplayText))]
-        //public static void TranslatorWord_UpdateDisplayText_Prefix(TranslatorWord __instance) {
-        //    Divergence.Instance.ModHelper.Console.WriteLine($"UpdateDisplayText is called: {__result}");
-        //[HarmonyPostfix]
-        //[HarmonyPatch(typeof(DialogueNode), nameof(DialogueNode.GetNextPage))]
-        //public static void DialogueNode_GetNextPage_Postfix(out string mainText) {
         [HarmonyPostfix]
         [HarmonyPatch(typeof(TextTranslation), nameof(TextTranslation.Translate))]
         public static void TextTranslation_Translate_Postfix(ref string __result) {
-            //Divergence.Instance.ModHelper.Console.WriteLine($"Translate is called: {__result}");
             if(__result.Contains("{{")) {
                 if(__result.Contains("{{DAM_INTEGRITY}}")) {
                     var damIntegrity = (_damDestructionController ? _damDestructionController.GetIntegrityPercent() : 100);
