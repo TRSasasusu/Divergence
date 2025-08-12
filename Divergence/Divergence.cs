@@ -21,7 +21,7 @@ namespace Divergence
             // Get the New Horizons API and load configs
             NewHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
             NewHorizons.LoadConfigs(this);
-            ModHelper.Console.WriteLine($"My mod {nameof(Divergence)} is loaded!", MessageType.Success);
+            ModHelper.Console.WriteLine($"{nameof(Divergence)} is loaded!", MessageType.Success);
             Patch.Initialize();
         }
     }

@@ -872,7 +872,7 @@
         "clipSelection": "sequential",
         "track": "music",
         "loop": false,
-        "volume": 0.65,
+        "volume": 0.5,
         "fadeSeconds": 2,
         "radius": 5,
         "audio": "SecretLibrary",
