@@ -135,7 +135,6 @@ namespace Divergence {
                         _underwaterFogMat = new Material(effectRuleset._material);
                         _underwaterFogMat.SetColor("_FogColor", new Color(0.00359f, 0.01044f, 0.0149f));
                         effectRuleset._material = _underwaterFogMat;
-                        Divergence.Instance.ModHelper.Console.WriteLine("completed tuning underwater color");
                         break;
                     }
                 }
