@@ -37,9 +37,9 @@ namespace Divergence
         [HarmonyPatch(typeof(DreamWorldController), nameof(DreamWorldController.ExitDreamWorld), [typeof(DreamWakeType)])]
         public static void DreamWorldController_ExitDreamWorld()
         {
-            var _SecretEntranceSector = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/SectorTrigger_SecretEntrance").GetComponent<OWTriggerVolume>();
-            _SecretEntranceSector.AddObjectToVolume(Locator.GetPlayerDetector().gameObject);
-            _SecretEntranceSector.AddObjectToVolume(Locator.GetPlayerCameraDetector().gameObject);
+            var _SecretEntranceTrigger = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/SectorTrigger_SecretEntrance").GetComponent<OWTriggerVolume>();
+            _SecretEntranceTrigger.AddObjectToVolume(Locator.GetPlayerDetector().gameObject);
+            _SecretEntranceTrigger.AddObjectToVolume(Locator.GetPlayerCameraDetector().gameObject);
         }
     }
 }
