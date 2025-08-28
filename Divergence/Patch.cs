@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using OWML.ModHelper;
 using System.Linq;
 using UnityEngine;
 using IEnumerator = System.Collections.IEnumerator;
@@ -19,6 +20,7 @@ namespace Divergence {
         static DamDestructionController _damDestructionController = null;
         static DreamCampfire _dreamCampfireZone1 = null;
         static DreamCampfire _dreamCampfireZone2 = null;
+        static OWRenderer _prisonerArtifactFire = null;
 
         public static void Initialize() {
             LoadManager.OnCompleteSceneLoad += (scene, loadScene) => {
@@ -280,27 +282,16 @@ namespace Divergence {
                 if(!mainframeCDT) {
                     continue;
                 }
-                var text = mainframeCDT._xmlCharacterDialogueAsset.text.Replace("DAY", "NIGHT")
-                                                                       .Replace("<Page>SOLAR SAILS: OK</Page>", "<Page>SOLAR SAILS: OK</Page>\n<Page>DAM INTEGRITY: {{DAM_INTEGRITY}}</Page>")
-                                                                       .Replace("STARLIT COVE: OK", "STARLIT COVE: {{STARLIT_COVE_STATE}}")
-                                                                       .Replace("SHROUDED WOODLANDS: OK", "SHROUDED WOODLANDS: {{SHROUDED_WOODLANDS_STATE}}")
-                                                                       .Replace("Simulation integrity at 99.86%. All modules stable.", "Simulation integrity at {{SIMULATION_INTEGRITY}}. {{SIMULATION_MODULES_STATE}}");
+                var text = mainframeCDT._xmlCharacterDialogueAsset.text.Replace("<Page>SOLAR SAILS: OK</Page>", "<Page>SOLAR SAILS: OK</Page>\n<Page>DAM INTEGRITY: {{DAM_INTEGRITY}}</Page>")
+                                                                       .Replace("STARLIT COVE: OK (10 occupants)", "STARLIT COVE: {{STARLIT_COVE_STATE}}")
+                                                                       .Replace("SHROUDED WOODLANDS: OK (11 occupants)", "SHROUDED WOODLANDS: {{SHROUDED_WOODLANDS_STATE}}")
+                                                                       .Replace("SUBTERRANEAN LAKE: OK (1 occupant)", "SUBTERRANEAN LAKE: {{SUBTERRANEAN_LAKE_STATE}}")
+                                                                       .Replace("All population groups stable. There are currently 34 occupants within simulation context.", "{{SIMULATION_MODULES_STATE}}. There are currently {{SIMULATION_OCCUPANTS}} occupants within simulation context.");
                 var textAsset = new TextAsset(text);
                 mainframeCDT.SetTextXml(textAsset);
                 break;
             }
 
-            foreach (var key in new string[] {
-                "VerifyRingworldARTIFICIAL LIGHTING: OK (STAGE: NIGHT)",
-                "VerifyRingworld_SignalARTIFICIAL LIGHTING: OK (STAGE: NIGHT)",
-            }) {
-                if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                    TextTranslation.s_theTable.m_table.theTable[key] = "人工太陽:OK(ステージ:夜)";
-                }
-                else {
-                    TextTranslation.s_theTable.m_table.theTable[key] = "ARTIFICIAL LIGHTING: OK (STAGE: NIGHT)";
-                }
-            }
             foreach (var key in new string[] {
                 "VerifyRingworldDAM INTEGRITY: {{DAM_INTEGRITY}}",
                 "VerifyRingworld_SignalDAM INTEGRITY: {{DAM_INTEGRITY}}",
@@ -335,14 +326,29 @@ namespace Divergence {
                 }
             }
             foreach (var key in new string[] {
-                "VerifySimSimulation integrity at {{SIMULATION_INTEGRITY}}. {{SIMULATION_MODULES_STATE}}",
-                "VerifySim_SignalSimulation integrity at {{SIMULATION_INTEGRITY}}. {{SIMULATION_MODULES_STATE}}",
+                "VerifySimSUBTERRANEAN LAKE: {{SUBTERRANEAN_LAKE_STATE}}",
+                "VerifySim_SignalSUBTERRANEAN LAKE: {{SUBTERRANEAN_LAKE_STATE}}",
+            })
+            {
+                if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
+                {
+                    TextTranslation.s_theTable.m_table.theTable[key] = "SUBTERRANEAN LAKE:{{SUBTERRANEAN_LAKE_STATE}}";
+                }
+                else
+                {
+                    TextTranslation.s_theTable.m_table.theTable[key] = "SUBTERRANEAN LAKE: {{SUBTERRANEAN_LAKE_STATE}}";
+                }
+            }
+
+            foreach (var key in new string[] {
+                "VerifySim{{SIMULATION_MODULES_STATE}}. There are currently {{SIMULATION_OCCUPANTS}} occupants within simulation context.",
+                "VerifySim_Signal{{SIMULATION_MODULES_STATE}}. There are currently {{SIMULATION_OCCUPANTS}} occupants within simulation context.",
             }) {
                 if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
-                    TextTranslation.s_theTable.m_table.theTable[key] = "模擬現実の完全性は{{SIMULATION_INTEGRITY}}。{{SIMULATION_MODULES_STATE}}";
+                    TextTranslation.s_theTable.m_table.theTable[key] = "模擬現実の完全性は{{SIMULATION_OCCUPANTS}}。{{SIMULATION_MODULES_STATE}}";
                 }
                 else {
-                    TextTranslation.s_theTable.m_table.theTable[key] = "Simulation integrity at {{SIMULATION_INTEGRITY}}. {{SIMULATION_MODULES_STATE}}";
+                    TextTranslation.s_theTable.m_table.theTable[key] = "{{SIMULATION_MODULES_STATE}}. There are currently {{SIMULATION_OCCUPANTS}} occupants within simulation context.";
                 }
             }       
 
@@ -367,6 +373,16 @@ namespace Divergence {
                 var dreamCampfireZone2 = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone2/Sector_DreamFireLighthouse_Zone2_AnimRoot/Interactibles_DreamFireLighthouse_Zone2/DreamFireChamber/Prefab_IP_DreamCampfire/Controller_Campfire");
                 if(dreamCampfireZone2) {
                     _dreamCampfireZone2 = dreamCampfireZone2.GetComponent<DreamCampfire>();
+                    break;
+                }
+            }
+            while (true)
+            {
+                yield return null;
+                var PrisonerArtifactFire = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone4/Sector_PrisonDocks/Sector_PrisonInterior/Interactibles_PrisonInterior/Prefab_IP_Sarcophagus/Prefab_IP_SleepingMummy_v2 (PRISONER)/Mummy_IP_ArtifactAnim/ArtifactPivot/Flame");
+                if (PrisonerArtifactFire)
+                {
+                    _prisonerArtifactFire = PrisonerArtifactFire.GetComponent<OWRenderer>();
                     break;
                 }
             }
@@ -405,14 +421,14 @@ namespace Divergence {
                     var ok = _dreamCampfireZone2 ? _dreamCampfireZone2._state == Campfire.State.LIT : true;
                     string state;
                     if(ok) {
-                        state = "OK";
+                        state = "OK (10 occupants)";
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "炎に致命的なエラー";
                         }
                         else {
-                            state = "ERROR";
+                            state = "ERROR (0 occupants)";
                         }
                     }
                     __result = __result.Replace("{{STARLIT_COVE_STATE}}", state);
@@ -421,49 +437,106 @@ namespace Divergence {
                     var ok = _dreamCampfireZone1 ? _dreamCampfireZone1._state == Campfire.State.LIT : true;
                     string state;
                     if(ok) {
-                        state = "OK";
+                        state = "OK (11 occupants)";
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "炎に致命的なエラー";
                         }
                         else {
-                            state = "ERROR";
+                            state = "ERROR (0 occupants)";
                         }
                     }
                     __result = __result.Replace("{{SHROUDED_WOODLANDS_STATE}}", state);
                 }
-                else if(__result.Contains("{{SIMULATION_INTEGRITY}}")) {
+                else if (__result.Contains("{{SUBTERRANEAN_LAKE_STATE}}"))
+                {
+                    var ok = _prisonerArtifactFire ? _prisonerArtifactFire._gameplayActive : true;
+                    string state;
+                    if (ok)
+                    {
+                        state = "OK (1 occupant)";
+                    }
+                    else
+                    {
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
+                        {
+                            state = "炎に致命的なエラー";
+                        }
+                        else
+                        {
+                            state = "OK (0 occupants)";
+                        }
+                    }
+                    __result = __result.Replace("{{SUBTERRANEAN_LAKE_STATE}}", state);
+                }
+                else if(__result.Contains("{{SIMULATION_OCCUPANTS}}")) {
                     string integrity;
                     string state;
-                    if(!_dreamCampfireZone1 || _dreamCampfireZone1._state == Campfire.State.LIT) {
-                        integrity = "99.86%";
-                        if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
+                    if (_dreamCampfireZone1 && _dreamCampfireZone1._state == Campfire.State.LIT && _prisonerArtifactFire._gameplayActive == true) {
+                        integrity = "34";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "すべてのモジュールが安定しています。";
                         }
                         else {
-                            state = "All modules stable.";
+                            state = "All population groups stable";
                         }
                     }
-                    else if(_dreamCampfireZone2 && _dreamCampfireZone2._state == Campfire.State.LIT) {
-                        integrity = "87.12%";
-                        if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
+                    else if (_dreamCampfireZone1 && _dreamCampfireZone1._state == Campfire.State.LIT)
+                    {
+                        integrity = "33";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
+                        {
+                            state = "すべてのモジュールが安定しています。";
+                        }
+                        else
+                        {
+                            state = "WARNING: No occupants found for population group Subterranean Lake";
+                        }
+                    }
+                    else if (_dreamCampfireZone2 && _dreamCampfireZone2._state == Campfire.State.LIT && _prisonerArtifactFire._gameplayActive == true)
+                    {
+                        integrity = "23";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
+                        {
+                            state = "注意:1つのモジュールにエラーが発生しています。";
+                        }
+                        else
+                        {
+                            state = "ERROR: No occupants found for population group Shrouded Woodlands";
+                        }
+                    }
+                    else if (_dreamCampfireZone2 && _dreamCampfireZone2._state == Campfire.State.LIT) {
+                        integrity = "22";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "注意:1つのモジュールにエラーが発生しています。";
                         }
                         else {
-                            state = "WARNING: An error has occurred in one module.";
+                            state = "ERROR: No occupants found for population group(s) Shrouded Woodlands and Subterranean Lake";
                         }
                     }
-                    else {
-                        integrity = "51.37%";
+                    else if (_prisonerArtifactFire._gameplayActive == true) {
+                        integrity = "13";
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "注意:2つのモジュールにエラーが発生しています。";
                         }
                         else {
-                            state = "WARNING: Errors have occurred in two modules.";
+                            state = "ERROR: No occupants found for population group(s) Shrouded Woodlands and Starlit Cove";
                         }
                     }
-                    __result = __result.Replace("{{SIMULATION_INTEGRITY}}", integrity).Replace("{{SIMULATION_MODULES_STATE}}", state);
+                    else
+                    {
+                        integrity = "12";
+                        if (TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE)
+                        {
+                            state = "注意:2つのモジュールにエラーが発生しています。";
+                        }
+                        else
+                        {
+                            state = "ERROR: No occupants found for population group(s) Shrouded Woodlands, Subterranean Lake, and Starlit Cove";
+                        }
+                    }
+                        __result = __result.Replace("{{SIMULATION_OCCUPANTS}}", integrity).Replace("{{SIMULATION_MODULES_STATE}}", state);
                 }
             }
         }

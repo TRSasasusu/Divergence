@@ -25,7 +25,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>Verify integrity of simulation modules.</Text>
+				<Text>Verify status of simulation occupants.</Text>
 				<DialogueTarget>VerifySim</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
@@ -75,7 +75,7 @@
 		</Dialogue>
 		<DialogueOptionsList>
 			<DialogueOption>
-				<Text>Verify integrity of simulation modules.</Text>
+				<Text>Verify status of simulation occupants.</Text>
 				<DialogueTarget>VerifySim_Signal</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
@@ -118,12 +118,13 @@
 	<DialogueNode>
 		<Name>VerifySim</Name>
 		<Dialogue>
-			<Page>Verifying intergity of simulation modules...</Page>
-			<Page>ENDLESS CANYON: OK</Page>
-			<Page>STARLIT COVE: OK</Page>
-			<Page>SHROUDED WOODLANDS: OK</Page>
-			<Page>SUBTERRIANIAN LAKE: OK</Page>
-			<Page>Simulation integrity at 99.86%. All modules stable.</Page>
+			<Page>Verifying status of simulation occupants...</Page>
+			<Page>MAINFRAME: OK (1 occupant)</Page>
+			<Page>ENDLESS CANYON: OK (11 occupants)</Page>
+			<Page>STARLIT COVE: OK (10 occupants)</Page>
+			<Page>SHROUDED WOODLANDS: OK (11 occupants)</Page>
+			<Page>SUBTERRANEAN LAKE: OK (1 occupant)</Page>
+			<Page>All population groups stable. There are currently 34 occupants within simulation context.</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main</DialogueTarget>
 	</DialogueNode>
@@ -134,10 +135,11 @@
 			<Page>Verifying condition of external enviornment...</Page>
 			<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
 			<Page>LIFE SUPPORT: OK</Page>
-			<Page>ARTIFICIAL LIGHTING: OK (STAGE: DAY)</Page>
+			<Page>ARTIFICIAL LIGHTING: OFFLINE</Page>
 			<Page>CLIMATE CONTROL: OK</Page>
 			<Page>SOLAR SAILS: OK</Page>
 			<Page>WARNING: Host star is reaching the end of its natural life cycle! Adjusting stationary orbit...</Page>
+			<Page>WARNING: Lifetime energy consumption is higher than expected projections. Non-critical subsystems have been shut down to perserve power.</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main</DialogueTarget>
 	</DialogueNode>
@@ -261,12 +263,13 @@
 	<DialogueNode>
 		<Name>VerifySim_Signal</Name>
 		<Dialogue>
-			<Page>Verifying intergity of simulation modules...</Page>
-			<Page>ENDLESS CANYON: OK</Page>
-			<Page>STARLIT COVE: OK</Page>
-			<Page>SHROUDED WOODLANDS: OK</Page>
-			<Page>SUBTERRANEAN LAKE: OK</Page>
-			<Page>Simulation integrity at 99.86%. All modules stable.</Page>
+			<Page>Verifying status of simulation occupants...</Page>
+			<Page>MAINFRAME: OK (1 occupant)</Page>
+			<Page>ENDLESS CANYON: OK (11 occupants)</Page>
+			<Page>STARLIT COVE: OK (10 occupants)</Page>
+			<Page>SHROUDED WOODLANDS: OK (11 occupants)</Page>
+			<Page>SUBTERRANEAN LAKE: OK (1 occupant)</Page>
+			<Page>All population groups stable. There are currently 34 occupants within simulation context.</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
 	</DialogueNode>
@@ -274,13 +277,16 @@
 	<DialogueNode>
 		<Name>VerifyRingworld_Signal</Name>
 		<Dialogue>
-			<Page>Verifying condition of external enviornment...</Page>
-			<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
-			<Page>LIFE SUPPORT: OK</Page>
-			<Page>ARTIFICIAL LIGHTING: OK (STAGE: DAY)</Page>
-			<Page>CLIMATE CONTROL: OK</Page>
-			<Page>SOLAR SAILS: OK</Page>
-			<Page>WARNING: Host star is reaching the end of its natural life cycle! Adjusting stationary orbit...</Page>
+			<Dialogue>
+				<Page>Verifying condition of external enviornment...</Page>
+				<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
+				<Page>LIFE SUPPORT: OK</Page>
+				<Page>ARTIFICIAL LIGHTING: OFFLINE</Page>
+				<Page>CLIMATE CONTROL: OK</Page>
+				<Page>SOLAR SAILS: OK</Page>
+				<Page>WARNING: Host star is reaching the end of its natural life cycle! Adjusting stationary orbit...</Page>
+				<Page>WARNING: Lifetime energy consumption is higher than expected projections. Non-critical subsystems have been shut down to perserve power.</Page>
+			</Dialogue>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
 	</DialogueNode>
@@ -312,6 +318,23 @@
 		<DialogueOptionsList>
 			<DialogueOption>
 				<Text>Yes.</Text>
+				<DialogueTarget>SignalBlocker_PowerWarning</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>No.</Text>
+				<DialogueTarget>SignalBlocker_Disconnect</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<Name>SignalBlocker_PowerWarning</Name>
+		<Dialogue>
+			<Page>WARNING: Performing this operation will result in a significant divergence from reccomended power targets. Reduction in long-term viability of simulation context is likely. Proceed anyway?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yes.</Text>
 				<DialogueTarget>SignalBlocker_Connect</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
@@ -327,11 +350,10 @@
 			<FactID>IP_MAINFRAME_SIGNALBLOCKER</FactID>
 		</RevealFacts>
 		<Dialogue>
-			<Page>Establishing connection to intermediary relay satellite...</Page>
+			<Page>Configuring communications array for outbound transmission...</Page>
 			<Page>...</Page>
 			<Page>...</Page>
-			<Page>Connection established.</Page>
-			<Page>Beginning transmission... </Page>
+			<Page>Array configured for specified coordinate set. Beginning transmission... </Page>
 			<Page>...</Page>
 			<Page>...</Page>
 			<Page>...</Page>
@@ -380,7 +402,6 @@
 			<Page>OPERATIONAL STATUS: OK</Page>
 			<Page>POWER: OK</Page>
 			<Page>SIGNAL CAPTURE NET: OK</Page>
-			<Page>WARNING: Direct connection unavailable! Transmission is currently in receive-only mode!</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
 	</DialogueNode>
