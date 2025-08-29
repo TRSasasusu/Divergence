@@ -88,26 +88,35 @@
 				<DialogueTarget>ActivateCodeComputers</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<CancelledCondition>HasTalkedToSignalBlocker</CancelledCondition>
 			    <CancelledCondition>CodeComputersAttempt2</CancelledCondition>
 				<RequiredCondition>AllowCodeComputerReset</RequiredCondition>
 				<Text>Reset configuration of remote signal interfaces.</Text>
 				<DialogueTarget>ResetCodeComputers1</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<CancelledCondition>HasTalkedToSignalBlocker</CancelledCondition>
 			    <CancelledCondition>CodeComputersAttempt3</CancelledCondition>
 				<RequiredCondition>CodeComputersAttempt2</RequiredCondition>
 				<Text>Reset configuration of remote signal interfaces.</Text>
 				<DialogueTarget>ResetCodeComputers2</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<CancelledCondition>HasTalkedToSignalBlocker</CancelledCondition>
 				<RequiredCondition>CodeComputersAttempt3</RequiredCondition>
 				<Text>Reset configuration of remote signal interfaces.</Text>
 				<DialogueTarget>ResetCodeComputers3</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
+				<CancelledCondition>HasTalkedToSignalBlocker</CancelledCondition>
 				<RequiredCondition>CodeComputersActive</RequiredCondition>
 				<Text>Confirm validity of remote signal interfaces.</Text>
 				<DialogueTarget>CheckCodeComputers_Success</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredCondition>HasTalkedToSignalBlocker</RequiredCondition>
+				<Text>Reestablish connection with Signal Capture Satelite.</Text>
+				<DialogueTarget>SignalBlocker_Reconnect</DialogueTarget>
 			</DialogueOption>
 			<DialogueOption>
 				<Text>End communication.</Text>
@@ -363,6 +372,18 @@
 	</DialogueNode>
 
 	<DialogueNode>
+		<Name>SignalBlocker_Reconnect</Name>
+		<Dialogue>
+			<Page>Reestablishing connection to <![CDATA[<color=orange>Signal Capture Satelite</color>]]>... </Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>...</Page>
+			<Page>Connection established. All systems operational. Currently in orbit around <![CDATA[<color=orange>Universal Center</color>]]>.</Page>
+		</Dialogue>
+		<DialogueTarget>Mainframe_SignalBlocker</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
 		<Name>SignalBlocker_Disconnect</Name>
 		<Dialogue>
 			<Page>Canceling outbound transmission...</Page>
@@ -510,9 +531,9 @@
 	</DialogueNode>
 
 	<DialogueNode>
+		<SetCondition>HasTalkedToSignalBlocker</SetCondition>
 		<Name>SignalBlocker_Exit</Name>
 		<Dialogue>
-			<Page>Ending transmission with Signal Capture Satellite...</Page>
 			<Page>Ending transmission with Signal Capture Satellite...</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main_2</DialogueTarget>

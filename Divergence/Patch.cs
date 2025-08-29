@@ -81,7 +81,6 @@ namespace Divergence {
         }
 
         static IEnumerator RemoveArtificialSun() {
-            Divergence.Instance.ModHelper.Console.WriteLine("disable artificial sun");
             while(true) {
                 yield return null;
                 var ambientLightIPSurface = GameObject.Find("RingWorld_Body/Sector_RingInterior/Lights_RingInterior/AmbientLight_IP_Surface");
@@ -152,7 +151,6 @@ namespace Divergence {
         }
 
         static IEnumerator UpdateFog() {
-            Divergence.Instance.ModHelper.Console.WriteLine("updating fog");
             PlanetaryFogController fog;
             while(true) {
                 yield return null;
@@ -180,7 +178,6 @@ namespace Divergence {
         }
 
         static IEnumerator ChangeLantern() {
-            Divergence.Instance.ModHelper.Console.WriteLine("changing lantern");
             while(true) {
                 yield return null;
                 var brokenLantern = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone1/Structures_Zone1/BrokenLanternHouse_Zone1/Props_BrokenLanternHouse_Zone1/Prefab_IP_BROKENLanternItem (1)");
