@@ -10,6 +10,11 @@
         <Text>I found something!</Text>
         <DialogueTarget>CuratorDiscoveries</DialogueTarget>
       </DialogueOption>
+	  <DialogueOption>
+		<CancelledCondition>AcetateExposition</CancelledCondition>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
       <DialogueOption>
         <Text>Where are the other travelers?</Text>
         <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
@@ -18,10 +23,6 @@
         <Text>Tell me more about Feldspar.</Text>
         <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
       </DialogueOption>
-	  <DialogueOption>
-		<Text>What did you want to talk to me about?</Text>
-		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
-	  </DialogueOption>
 	  <DialogueOption>
 		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
 		<Text>What's that dark spot in that photograph?</Text>
@@ -44,6 +45,11 @@
         <Text>I found something!</Text>
         <DialogueTarget>CuratorDiscoveries</DialogueTarget>
       </DialogueOption>
+	  <DialogueOption>
+		<CancelledCondition>AcetateExposition</CancelledCondition>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
       <DialogueOption>
         <Text>Where are the other travelers?</Text>
         <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
@@ -52,10 +58,6 @@
         <Text>Tell me more about Feldspar.</Text>
         <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
       </DialogueOption>
-	  <DialogueOption>
-		<Text>What did you want to talk to me about?</Text>
-		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
-	  </DialogueOption>
 	  <DialogueOption>
 		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
 		<Text>What's that dark spot in that photograph?</Text>
@@ -78,6 +80,11 @@
         <Text>I found something!</Text>
         <DialogueTarget>CuratorDiscoveries</DialogueTarget>
       </DialogueOption>
+	  <DialogueOption>
+		 <CancelledCondition>AcetateExposition</CancelledCondition>
+		 <Text>What did you want to talk to me about?</Text>
+		 <DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
       <DialogueOption>
         <Text>Where are the other travelers?</Text>
         <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
@@ -86,10 +93,6 @@
         <Text>Tell me more about Feldspar.</Text>
         <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
       </DialogueOption>
-	  <DialogueOption>
-		<Text>What did you want to talk to me about?</Text>
-		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
-	  </DialogueOption>
 	  <DialogueOption>
 		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
 		<Text>What's that dark spot in that photograph?</Text>
@@ -112,6 +115,11 @@
         <Text>I found something!</Text>
         <DialogueTarget>CuratorDiscoveries</DialogueTarget>
       </DialogueOption>
+	  <DialogueOption>
+		<CancelledCondition>AcetateExposition</CancelledCondition>
+		<Text>What did you want to talk to me about?</Text>
+		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
+	  </DialogueOption>
       <DialogueOption>
         <Text>Where are the other travelers?</Text>
         <DialogueTarget>CuratorOtherTravelers</DialogueTarget>
@@ -120,10 +128,6 @@
         <Text>Tell me more about Feldspar.</Text>
         <DialogueTarget>CuratorMoreAboutFeldspar</DialogueTarget>
       </DialogueOption>
-	  <DialogueOption>
-		<Text>What did you want to talk to me about?</Text>
-		<DialogueTarget>CuratorAcetateIntro</DialogueTarget>
-	  </DialogueOption>
 	  <DialogueOption>
 		<RequiredLogCondition>TH_RADIO_TOWER_X1</RequiredLogCondition>
 		<Text>What's that dark spot in that photograph?</Text>
@@ -171,6 +175,7 @@
 
   <DialogueNode>
 		<Name>CuratorAcetateIntro</Name>
+	    <SetCondition>AcetateExposition</SetCondition>
 		<Dialogue>
 			<Page>Oh... yes, that. I suppose Slate told you, then?</Page>
 			<Page>I wasn't going to mention it since this is your first expedition, but something about that statue opening its eyes convinced me otherwise.</Page>
@@ -206,16 +211,16 @@
 		<Page>Did you now? Let's hear it!</Page>
 	</Dialogue>
 	<DialogueOptionsList>
-		<!--<DialogueOption>
+		<DialogueOption>
 			<RequiredLogCondition>IP_RING_WORLD_X1</RequiredLogCondition>
 			<Text>I found an entirely new alien civilization hidden within our star system!</Text>
 			<DialogueTarget>CuratorFoundRingworld</DialogueTarget>
-		</DialogueOption>-->
-		<!--<DialogueOption>
-			<RequiredPersistentCondition>QM_TRANSPORT_SIXTHLOCATION</RequiredPersistentCondition>
+		</DialogueOption>
+		<DialogueOption>
+			<RequiredLogCondition>QM_TRANSPORT_SIXTHLOCATION</RequiredLogCondition>
 			<Text>I think I know what happened to Acetate...</Text>
 			<DialogueTarget>CuratorAcetateFound</DialogueTarget>
-		</DialogueOption>-->
+		</DialogueOption>
 		<DialogueOption>
 			<RequiredPersistentCondition>MetFeldspar</RequiredPersistentCondition>
 			<Text>I found Feldspar!</Text>
@@ -229,6 +234,31 @@
   </DialogueNode>
 
   <DialogueNode>
+	 <Name>CuratorFoundRingworld</Name>
+	 <Dialogue>
+		<Page>Did you now? That is <![CDATA[<i>]]>fascinating<![CDATA[</i>]]>. It was always my hope that you'd uncover something truly groundbreaking. And on your first expedition no less!</Page>
+		<Page>Perhaps we should hold a ceremony of sorts? Something which is fitting for such a profound discovery, and celebrates your accomplishments as the newest member of Outer Wilds Ventures.</Page>
+		<Page>Do give me a few days to get everything sorted. I also ask that you hold off on telling the others for now - I'd love for everyone to be together when we go and break the news.</Page>
+		<Page>On second thought, perhaps you should be the one to tell Riebeck of your discovery? I'm sure they would be delighted to hear all about it!</Page>
+		<Page>Anyhow, don't let me distract from learning more about this new species. All I ask is that your bring something back with you for the mueseum!</Page>
+	 </Dialogue>
+	 <DialogueTarget>Curator13_New</DialogueTarget>
+  </DialogueNode>
+
+	<DialogueNode>
+		<Name>CuratorAcetateFound</Name>
+		<SetCondition>FoundAcetate</SetCondition>
+		<Dialogue>
+			<Page>I see. I must say, I didn't expect to hear that, after all these years.</Page>
+			<Page>I knew deep down, I suppose. If what you're saying is true, even if they did find this "Eye of the Universe", I can't imagine that they've survived all these years out on their own.</Page>
+			<Page>Still though, thank you. It'll take me a bit to understand everything you told me. The truth is painful at times, but it's all we have.</Page>
+			<Page>If you ever meet them. If, perhaps, you choose to go down the same path, tell them that I could not be more proud. They have done more with their life than I ever will.</Page>
+			<Page>Forgive me. I don't mean to be so gloomy. Please, do get back to your expedition. I'd hate for all of this to hinder your progress in some way.</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13_New</DialogueTarget>
+	</DialogueNode>
+  
+	<DialogueNode>
 	<Name>CuratorExit</Name>
 	<Dialogue>
 	   <Page>Ah. Well, if you do come across anything in your travels that you feel is worth mentioning, I would love to hear it.</Page>
@@ -269,7 +299,8 @@
 		<Dialogue>
 			<Page>Oh, well, crunching the numbers as they say. Mainly just wanted to get a little bit of peace and quiet. I tend to come here when the Observatory gets a little too... busy, for my liking - and sometimes it's very helpful for getting a different perspective on things.</Page>
 			<Page>Frankly, all of this ruckus surrounding the statue opening its eyes has proved a little bit too much for me at the moment. And of course Hal is asking a million questions, not that I can blame them.</Page>
-			<Page>Feel free to look around to your heart's content, if you'd like. These are some of the first images printed of our solar system in its entirety. Of course, not all of them are <![CDATA[<i>]]>perfect<![CDATA[</i>]]>, mind you, but it truly is impressive to look at it all from a distance. See if you can't spot Timber Hearth!</Page>
+			<Page>Feel free to look around to your heart's content, if you'd like. These are some of the first images printed of our solar system in its entirety!</Page>
+			<Page>Of course, not all of them are <![CDATA[<i>]]>perfect<![CDATA[</i>]]>, mind you, but it truly is impressive to look at it all from a distance. See if you can't spot Timber Hearth!</Page>
 		</Dialogue>
 		<DialogueTarget>Curator13_New_Intro</DialogueTarget>
 	</DialogueNode>
@@ -283,13 +314,25 @@
 		</Dialogue>
 		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
+
+	<DialogueNode>
+		<Name>CuratorIntroFoundAcetate</Name>
+		<EntryCondition>FoundAcetate</EntryCondition>
+		<EntryCondition>LOOP_COUNT_GOE_2</EntryCondition>
+		<EntryCondition>TalkedToCurator</EntryCondition>
+		<Dialogue>
+			<Page>Ah, hello again. I do hope that your expedition is going well, despite the circumstances.</Page>
+			<Page>I will be alright, I just need some time to think. Perhaps this time away from the others will do me good.</Page>
+		</Dialogue>
+		<DialogueTarget>Curator13_New</DialogueTarget>
+	</DialogueNode>
 	
 	<DialogueNode>
 		<Name>CuratorEclipse</Name>
 		<Dialogue>
-			<Page>Ah, so you noticed that too, did you? Chert thinks it has something to do with Dark Bramble, but my working theory is that it was actually the result of a perfectly-timed blast of solar radiation in the orbital path of satellite.</Page>
-			<Page>Luckily it seems to have caused no permanent damage, considering Gabbro didn't find anything wrong with the equipment. I suppose there could be another explanation for it, but I'm almost certain it was just an extraordinary coincidence.</Page>
-			<Page>On a related note, I almost debated on using that particular photograph as kindling for my campfire out there, but I figure that its historical significance far outweighs a little blemish with a fascinating origin story.</Page>
+			<Page>Ah, so you noticed that too, did you? Chert thinks it has something to do with Dark Bramble, but my theory is that it was actually the result of a perfectly-timed blast of solar radiation in the orbital path of satellite.</Page>
+			<Page>Luckily it caused no permanent damage, considering Gabbro didn't find anything wrong with the equipment. I suppose there could be another explanation for it, but I'm almost certain it was just an extraordinary coincidence.</Page>
+			<Page>On a related note, I almost debated on using that particular photograph as kindling for my campfire out there, but I figure that its historical significance far outweighs any percieved imperfection.</Page>
 		</Dialogue>
 		<DialogueTarget>Curator13_New</DialogueTarget>
 	</DialogueNode>
