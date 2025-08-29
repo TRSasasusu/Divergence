@@ -13,6 +13,7 @@ namespace Divergence {
         static Coroutine _changeLantern = null;
         static Coroutine _changeTextOfMainframe = null;
         static Coroutine _tuneLighting = null;
+        static Coroutine _setAlarmBell = null;
 
         static Material _riverMat = null;
         static Material _underwaterFogMat = null;
@@ -68,6 +69,13 @@ namespace Divergence {
                         _tuneLighting = null;
                     }
                     _tuneLighting = Divergence.Instance.StartCoroutine(TuneLighting());
+
+                    if (_setAlarmBell != null)
+                    {
+                        Divergence.Instance.StopCoroutine(_setAlarmBell);
+                        _setAlarmBell = null;
+                    }
+                    _setAlarmBell = Divergence.Instance.StartCoroutine(SetAlarmBell());
                 }
             };
         }
@@ -268,6 +276,27 @@ namespace Divergence {
                     break;
                 }
                 lightEyeSymbol.intensity = 1.5f;
+            }
+        }
+
+        static IEnumerator SetAlarmBell()
+        {
+            Divergence.Instance.ModHelper.Console.WriteLine("Updating alarm bell...");
+            while (true)
+            {
+                yield return null;
+                var dreamCampfireMainframe = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/IP_Dreamfire_Mainframe/Controller_Campfire");
+                if (dreamCampfireMainframe)
+                {
+                    var campfireController = dreamCampfireMainframe.GetComponent<DreamCampfire>();
+                    var customAlarmBell = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/Prefab_IP_AlarmBell").GetComponent<AlarmBell>();
+                    var customLightController = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/DreamFireChamber_DFH_Zone3/Effects_IP_AlarmBellLights").GetComponent<OWLightController>();
+                    var customAlarmBellAnim = customAlarmBell._animation.GetComponent<Animation>();
+                    customAlarmBellAnim.isActiveAndEnabled = true;
+                    customAlarmBell._lightController = customLightController;
+                    campfireController._alarmBell = customAlarmBell;
+                    break;
+                }
             }
         }
 

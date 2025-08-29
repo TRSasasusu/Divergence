@@ -513,6 +513,7 @@
 		<Name>SignalBlocker_Exit</Name>
 		<Dialogue>
 			<Page>Ending transmission with Signal Capture Satellite...</Page>
+			<Page>Ending transmission with Signal Capture Satellite...</Page>
 		</Dialogue>
 		<DialogueTarget>Mainframe_Main_2</DialogueTarget>
 	</DialogueNode>
