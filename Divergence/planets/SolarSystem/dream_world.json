@@ -814,6 +814,29 @@
           ],
           "reveals": [ "IP_MAINFRAME_DREAMFIRE" ],
           "playWithShipLogFacts": [ "IP_MAINFRAME_DREAMFIRE" ]
+        },
+        {
+          "type": "slideReel",
+          "position": {
+            "x": -85.34804,
+            "y": 51.15001,
+            "z": 255.4509
+          },
+          "rotation": {
+            "x": 0,
+            "y": 92.38456,
+            "z": 0
+          },
+          "slides": [
+            {
+              "ambientLightColor": {
+                "a": 255
+              },
+              "imagePath": "graphics/slides/a_curse_on_you_and_your_family.png",
+              "backdropFadeTime": 1,
+              "backdropAudio": "audio/your_majesty.wav"
+            }
+          ]
         }
       ],
       "dreamArrivalPoints": [
