@@ -15,8 +15,19 @@ namespace Divergence
         {
             if (__instance.transform.parent.name.Contains("IP_Dreamfire_Mainframe"))
             {
+                //I still don't know what the underlying problem is, but doing all of this incredibly hacky shit fixes it, so it really doesn't matter anymore.
+                Divergence.Instance.ModHelper.Console.WriteLine("guh");
+
                 //Add the player to the cloaking field manually
                 Locator.GetCloakFieldController().OnPlayerEnter.Invoke();
+                PlayerState._inCloakingField = true;
+                GlobalMessenger.FireEvent("EnterCloak");
+
+                //Manually set the renderer fade of the lightbeams to 0 so they actually render
+                var _LightSideLightBeam = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_LightSideDockingBay/Effects_LightSideDockingBay/Lightbeam_LightSideDockingBay").GetComponent<OWRenderer>();
+                _LightSideLightBeam.SetFade(0);
+                var _DarkSideLightBeam = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_DarkSideDockingBay/Effects_DarkSideDockingBay/Lightbeam_DarkSideDockingBay").GetComponent<OWRenderer>();
+                _DarkSideLightBeam.SetFade(0);
 
                 //Turning RingInteriorSectorTriggerVolume off and back on again is literally the only thing that fixes this, so that's what we're doing I guess
                 var _RingWorldSector = GameObject.Find("RingWorld_Body/Sector_RingWorld/Volumes_RingWorld/RingInteriorSectorTriggerVolume");
