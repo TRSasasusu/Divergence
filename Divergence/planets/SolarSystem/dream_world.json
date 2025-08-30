@@ -854,6 +854,7 @@
   "Volumes": {
     "audioVolumes": [
       {
+        "rename": "Mainframe_ArrivalStinger",
         "layer": 0,
         "priority": 1,
         "clipSelection": "sequential",

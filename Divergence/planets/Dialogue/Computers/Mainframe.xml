@@ -128,8 +128,8 @@
 		<Name>VerifySim</Name>
 		<Dialogue>
 			<Page>Verifying status of simulation occupants...</Page>
-			<Page>MAINFRAME: OK (1 occupant)</Page>
-			<Page>ENDLESS CANYON: OK (11 occupants)</Page>
+			<Page>MAINFRAME: OK [1 occupant]</Page>
+			<Page>ENDLESS CANYON: OK [11 occupants]</Page>
 			<Page>STARLIT COVE: OK (10 occupants)</Page>
 			<Page>SHROUDED WOODLANDS: OK (11 occupants)</Page>
 			<Page>SUBTERRANEAN LAKE: OK (1 occupant)</Page>
@@ -142,7 +142,7 @@
 		<Name>VerifyRingworld</Name>
 		<Dialogue>
 			<Page>Verifying condition of external enviornment...</Page>
-			<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
+			<Page>HULL INTEGRITY: 97.76% [BREACH DETECTED]</Page>
 			<Page>LIFE SUPPORT: OK</Page>
 			<Page>ARTIFICIAL LIGHTING: OFFLINE</Page>
 			<Page>CLIMATE CONTROL: OK</Page>
@@ -273,8 +273,8 @@
 		<Name>VerifySim_Signal</Name>
 		<Dialogue>
 			<Page>Verifying status of simulation occupants...</Page>
-			<Page>MAINFRAME: OK (1 occupant)</Page>
-			<Page>ENDLESS CANYON: OK (11 occupants)</Page>
+			<Page>MAINFRAME: OK [1 occupant]</Page>
+			<Page>ENDLESS CANYON: OK [11 occupants]</Page>
 			<Page>STARLIT COVE: OK (10 occupants)</Page>
 			<Page>SHROUDED WOODLANDS: OK (11 occupants)</Page>
 			<Page>SUBTERRANEAN LAKE: OK (1 occupant)</Page>
@@ -288,7 +288,7 @@
 		<Dialogue>
 			<Dialogue>
 				<Page>Verifying condition of external enviornment...</Page>
-				<Page>HULL INTEGRITY: 97.76% (BREACH DETECTED)</Page>
+				<Page>HULL INTEGRITY: 97.76% [BREACH DETECTED]</Page>
 				<Page>LIFE SUPPORT: OK</Page>
 				<Page>ARTIFICIAL LIGHTING: OFFLINE</Page>
 				<Page>CLIMATE CONTROL: OK</Page>

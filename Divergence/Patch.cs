@@ -425,7 +425,7 @@ namespace Divergence {
                             damState = $"0%(崩壊)";
                         }
                         else {
-                            damState = $"0% (CATASTROPHIC FAILURE)";
+                            damState = $"0% [CATASTROPHIC FAILURE]";
                         }
                     }
                     else if(damIntegrity >= 99) {
@@ -445,14 +445,14 @@ namespace Divergence {
                     var ok = _dreamCampfireZone2 ? _dreamCampfireZone2._state == Campfire.State.LIT : true;
                     string state;
                     if(ok) {
-                        state = "OK (10 occupants)";
+                        state = "OK [10 occupants]";
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "炎に致命的なエラー";
                         }
                         else {
-                            state = "ERROR (0 occupants)";
+                            state = "ERROR [0 occupants]";
                         }
                     }
                     __result = __result.Replace("{{STARLIT_COVE_STATE}}", state);
@@ -461,14 +461,14 @@ namespace Divergence {
                     var ok = _dreamCampfireZone1 ? _dreamCampfireZone1._state == Campfire.State.LIT : true;
                     string state;
                     if(ok) {
-                        state = "OK (11 occupants)";
+                        state = "OK [11 occupants]";
                     }
                     else {
                         if(TextTranslation.s_theTable.m_language == TextTranslation.Language.JAPANESE) {
                             state = "炎に致命的なエラー";
                         }
                         else {
-                            state = "ERROR (0 occupants)";
+                            state = "ERROR [0 occupants]";
                         }
                     }
                     __result = __result.Replace("{{SHROUDED_WOODLANDS_STATE}}", state);
@@ -479,7 +479,7 @@ namespace Divergence {
                     string state;
                     if (ok)
                     {
-                        state = "OK (1 occupant)";
+                        state = "OK [1 occupant]";
                     }
                     else
                     {
@@ -489,7 +489,7 @@ namespace Divergence {
                         }
                         else
                         {
-                            state = "OK (0 occupants)";
+                            state = "OK [0 occupants]";
                         }
                     }
                     __result = __result.Replace("{{SUBTERRANEAN_LAKE_STATE}}", state);
