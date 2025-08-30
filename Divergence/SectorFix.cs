@@ -17,6 +17,7 @@ namespace Divergence
             {
                 //Add the player to the cloaking field manually
                 Locator.GetCloakFieldController().OnPlayerEnter.Invoke();
+                PlayerState._inCloakingField = true;
 
                 //Turning RingInteriorSectorTriggerVolume off and back on again is literally the only thing that fixes this, so that's what we're doing I guess
                 var _RingWorldSector = GameObject.Find("RingWorld_Body/Sector_RingWorld/Volumes_RingWorld/RingInteriorSectorTriggerVolume");
