@@ -1,4 +1,4 @@
-![divergence_logo](https://user-images.githubusercontent.com/78282407/213965486-e8fc8417-2762-4867-ae5e-7dab502d8e6e.png)
+![divergence_logo](https://github.com/user-attachments/assets/36763e4b-8d91-4dd9-817d-cc8b95ee16d0)
 
 # Divergence
 
@@ -12,7 +12,7 @@ Requires New Horizons and the Echoes of the Eye DLC for Outer Wilds.
 
 ## Credits
 
-Created, written, and designed by artificialparanoia — with immense assistance from orclecle (Enhance Divergence, Japanese translation, general Unity help). 
+Created, written, and designed by artificialparanoia — with immense assistance from orclecle (Enhance Divergence, Japanese translation, general Unity help). Logo by classic.
 
 Featuring an excerpt of "Hearth's Shadow", by Andrew Prahlow (Echoes of the Eye: The Lost Reels).
 

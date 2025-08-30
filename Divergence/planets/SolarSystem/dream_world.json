@@ -707,42 +707,6 @@
             },
             {
               "imagePath": "graphics/slides/cellar_warp/23.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/24.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/25.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/26.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/27.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/28.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/29.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/30.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/31.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/32.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/33.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/34.png"
-            },
-            {
-              "imagePath": "graphics/slides/cellar_warp/35.png"
             }
           ],
           "parentPath": "Sector_DreamWorld/Sector_DreamZone_4/Sector_DreamPrisonInterior/Interactibles_DreamPrisonInterior",
@@ -850,6 +814,29 @@
           ],
           "reveals": [ "IP_MAINFRAME_DREAMFIRE" ],
           "playWithShipLogFacts": [ "IP_MAINFRAME_DREAMFIRE" ]
+        },
+        {
+          "type": "slideReel",
+          "position": {
+            "x": -85.34804,
+            "y": 51.15001,
+            "z": 255.4509
+          },
+          "rotation": {
+            "x": 0,
+            "y": 92.38456,
+            "z": 0
+          },
+          "slides": [
+            {
+              "ambientLightColor": {
+                "a": 255
+              },
+              "imagePath": "graphics/slides/a_curse_on_you_and_your_family.png",
+              "backdropFadeTime": 1,
+              "backdropAudio": "audio/your_majesty.wav"
+            }
+          ]
         }
       ],
       "dreamArrivalPoints": [
