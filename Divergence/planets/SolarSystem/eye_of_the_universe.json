@@ -12,13 +12,14 @@
             "detectionRadius": 10000,
             "frequency": "DreamSignal",
             "position": {
-              "x": -2.168599,
-              "y": -476.3841,
-              "z": -15.01326
+              "x": 0,
+              "y": -274,
+              "z": 0
             },
             "sourceRadius": 10,
-            "parentPath": "Sector_EyeOfTheUniverse/SixthPlanet_Root/SignalJammer_Pivot",
-            "identificationRadius": 10000
+            "parentPath": "EyeOfTheUniverse_Body/Sector_EyeOfTheUniverse/SixthPlanet_Root/Volumes_SixthPlanet/QuantumFoamTrigger",
+            "identificationRadius": 10000,
+            "isRelativeToParent":  true
           },
           {
             "onlyAudibleToScope": true,
