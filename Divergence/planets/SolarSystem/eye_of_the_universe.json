@@ -4,22 +4,38 @@
     "starSystem": "EyeOfTheUniverse",
     "Props": {
         "signals": [
-            {
-                "onlyAudibleToScope": true,
-                "reveals": "",
-                "name": "TransportPilgrimEYE",
-                "audio": "audio/test_audio_distress.wav",
-                "detectionRadius": 10000,
-                "frequency": "DreamSignal",
-                "position": {
-                    "x": -2.168599,
-                    "y": -476.3841,
-                    "z": -15.01326
-                },
-                "sourceRadius": 10,
-                "parentPath": "Sector_EyeOfTheUniverse/SixthPlanet_Root/SignalJammer_Pivot",
-                "identificationRadius": 2
-            }
+          {
+            "onlyAudibleToScope": true,
+            "reveals": "",
+            "name": "TransportPilgrimEYE",
+            "audio": "audio/test_audio_distress.wav",
+            "detectionRadius": 10000,
+            "frequency": "DreamSignal",
+            "position": {
+              "x": -2.168599,
+              "y": -476.3841,
+              "z": -15.01326
+            },
+            "sourceRadius": 10,
+            "parentPath": "Sector_EyeOfTheUniverse/SixthPlanet_Root/SignalJammer_Pivot",
+            "identificationRadius": 10000
+          },
+          {
+            "onlyAudibleToScope": true,
+            "reveals": "",
+            "name": "TransportPilgrimEYE",
+            "audio": "audio/test_audio_distress.wav",
+            "detectionRadius": 800,
+            "frequency": "DreamSignal",
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "sourceRadius": 10,
+            "parentPath": "Sector_EyeOfTheUniverse/Sector_Observatory/Acetate",
+            "identificationRadius": 2
+          }
         ],
       "dialogue": [
         {
