@@ -869,6 +869,23 @@
           "y": 24.4664,
           "z": -186.142
         }
+      },
+      {
+        "rename": "Mainframe_Ambience",
+        "layer": 1,
+        "priority": 2,
+        "clipSelection": "random",
+        "track": "environment",
+        "loop": true,
+        "volume": 0.5,
+        "fadeSeconds": 2,
+        "radius": 5,
+        "audio": "Ambience_DW_Base",
+        "position": {
+          "x": -31.05546,
+          "y": 24.4664,
+          "z": -186.142
+        }
       }
     ],
     "revealVolumes": [
