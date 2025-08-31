@@ -286,7 +286,7 @@ namespace Divergence {
                 if (dreamCampfireMainframe)
                 {
                     var campfireController = dreamCampfireMainframe.GetComponent<DreamCampfire>();
-                    var customAlarmBell = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/Prefab_IP_AlarmBell").GetComponent<AlarmBell>();
+                    var customAlarmBell = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/Prefab_IP_AlarmBell_1").GetComponent<AlarmBell>();
                     var customLightController = GameObject.Find("RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/DreamFireChamber_DFH_Zone3/Effects_IP_AlarmBellLights").GetComponent<OWLightController>();
                     customAlarmBell._lightController = customLightController;
                     campfireController._alarmBell = customAlarmBell;

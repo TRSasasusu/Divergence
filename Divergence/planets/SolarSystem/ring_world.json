@@ -1,23 +1,26 @@
 {
   "$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
   "name": "RINGWORLD",
+  "removeChildren": [ "Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3/Prefab_IP_AlarmBell" ],
   "Props": {
     "details": [
-      //{
-      //  "scale": 1,
-      //  "path": "TimberHearth_Body/Sector_TH/Sector_RadioTower/RadioTower_DLC/Interactibles_RadioTower/Prefab_HEA_Recorder",
-      //  "rename": "AcetateSecretLabRecorder",
-      //  "position": {
-      //    "x": 194.3735,
-      //    "y": -155.3829,
-      //    "z": 191.5018
-      //  },
-      //  "rotation": {
-      //    "x": 337.9953,
-      //    "y": 314.6848,
-      //    "z": 90
-      //  }
-      //},
+      {
+        "rename": "Prefab_IP_AlarmBell_1",
+        "scale": 1,
+        "path": "RingWorld_Body/Sector_RingInterior/Sector_Zone3/Sector_HiddenGorge/Sector_DreamFireHouse_Zone3/Interactables_DreamFireHouse_Zone3/DreamFireChamber_DFH_Zone3/Prefab_IP_AlarmBell",
+        "position": {
+          "x": -0.0001,
+          "y": 10,
+          "z": 0.952
+        },
+        "rotation": {
+          "x": -0.0001,
+          "y": 180.0001,
+          "z": 0
+        },
+        "parentPath": "Sector_RingWorld/Sector_SecretEntrance/Interactibles_SecretEntrance/Experiment_3",
+        "isRelativeToParent":  true
+      },
       {
         "scale": 1,
         "path": "TimberHearth_Body/Sector_TH/Sector_Village/Interactables_Village/Interactables_StaticGeo/OtherComponentsGroup/Props_HEA_FlightChair",

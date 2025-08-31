@@ -59,7 +59,7 @@ namespace Divergence
                     _hasPlayedArrivalMusic = false;
                 }
             }
-            if (_hasPlayedArrivalMusic && !_arrivalMusicSource.isPlaying && _arrivalMusicTrigger.isActiveAndEnabled && Locator.GetDreamWorldController()._outsideLanternBounds)
+            if (_hasPlayedArrivalMusic && !_arrivalMusicSource.isPlaying && _arrivalMusicTrigger.isActiveAndEnabled && !Locator.GetDreamWorldController()._outsideLanternBounds)
             {
                 _arrivalMusicTrigger.gameObject.SetActive(false);
             }
