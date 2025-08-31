@@ -278,7 +278,6 @@ namespace Divergence {
 
         static IEnumerator SetAlarmBell()
         {
-            Divergence.Instance.ModHelper.Console.WriteLine("Updating alarm bell...");
             while (true)
             {
                 yield return null;
