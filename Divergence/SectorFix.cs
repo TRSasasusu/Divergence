@@ -1,7 +1,4 @@
 ﻿using HarmonyLib;
-using OWML.Common;
-using OWML.ModHelper;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Divergence
