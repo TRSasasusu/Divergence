@@ -31,6 +31,9 @@ namespace Divergence
         {
             if (loadScene != OWScene.SolarSystem) return;
 
+            var DreamWorldAudioController = GameObject.Find("DreamWorld_Body/Sector_DreamWorld/AudioController_DreamWorld");
+            DreamWorldAudioController.AddComponent<MainframeAudioHandler>();
+
             //Super ugly fix for sector cull group pop-in when warping from the dreamfire
             var _SecretEntranceStructures = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Structures_SecretEntrance").GetComponent<SectorCullGroup>();
             var _SecretEntranceProps = GameObject.Find("RingWorld_Body/Sector_RingWorld/Sector_SecretEntrance/Props_SecretEntrance").GetComponent<SectorCullGroup>();
